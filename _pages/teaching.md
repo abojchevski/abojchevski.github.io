@@ -7,8 +7,10 @@ sort: 4
 ---
 
 ### Lectures
-[Machine Learning](https://www.in.tum.de/daml/lehre/wintersemester-202021/machine-learning/){:target="_blank"}
+- [Elements of Machine Learning](https://cms.cispa.saarland/eml22/){:target="_blank"} (Winter Semester 22/23). Co-teaching with [Prof. Jilles Vreeken](https://people.mmci.uni-saarland.de/~jilles/){:target="_blank"}.
+- [Machine Learning](https://www.in.tum.de/daml/lehre/wintersemester-202021/machine-learning/){:target="_blank"}
 (Winter Semester 20/21). Co-teaching with Prof. Stephan Günnemann.
 
 ### Seminars
-[Trustworthy Graph Neural Networks](https://cms.cispa.saarland/tgnn_ws21/){:target="_blank"} (Winter Semester 21/22).
+- [Classic Contributions to Machine Learning](https://cms.cispa.saarland/peml/){:target="_blank"} (Summer Semester 22). Co-teaching with Rebekka Burkholz.
+- [Trustworthy Graph Neural Networks](https://cms.cispa.saarland/tgnn_ws21/){:target="_blank"} (Winter Semester 21/22).

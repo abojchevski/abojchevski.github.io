@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 description: publications in reversed chronological order </br> * denotes equal contribution # by categories </br>
-years: [2021, 2020, 2019, 2018, 2017]
+years: [2022, 2021, 2020, 2019, 2018, 2017]
 nav: true
 sort: 3
 ---
