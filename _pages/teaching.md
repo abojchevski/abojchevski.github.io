@@ -7,7 +7,7 @@ sort: 4
 ---
 
 ### Lectures
-- [Elements of Machine Learning](https://cms.cispa.saarland/eml22/){:target="_blank"} (Winter Semester 22/23). Co-teaching with [Prof. Jilles Vreeken](https://people.mmci.uni-saarland.de/~jilles/){:target="_blank"}.
+- [Elements of Machine Learning](https://cms.cispa.saarland/eml22/){:target="_blank"} (Winter Semester 22/23). Co-teaching with Prof. Jilles Vreeken.
 - [Machine Learning](https://www.in.tum.de/daml/lehre/wintersemester-202021/machine-learning/){:target="_blank"}
 (Winter Semester 20/21). Co-teaching with Prof. Stephan Günnemann.
 

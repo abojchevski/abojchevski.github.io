@@ -7,10 +7,10 @@ sort: 4
 ---
 
 ### PhD/PostDoc Positions
-We are looking for people with computer science (or related) background interested in trustworthy machine learning research. We offer fully-funded PhD/PostDoc positions on one or more of the following topics: adversarial robustness (attacks, defenses, certificates), privacy attacks and privacy-preserving learning, algorithmic fairness and bias, uncertainty-aware models and out-of-distribution detection, out-of-domain generalization, and explainability. If you are interested in working with us on these (or adjacent) topics keep reading.
+We are looking for people with computer science (or related) background interested in **trustworthy machine learning** research. We offer fully-funded PhD/PostDoc positions on one or more of the following topics: adversarial robustness (attacks, defenses, certificates), privacy attacks and privacy-preserving learning, algorithmic fairness and bias, uncertainty-aware models and out-of-distribution detection, out-of-domain generalization, and explainability. If you are interested in working with us on these (or adjacent) topics keep reading.
 {:align="justify"}
 
-The main focus will be on graph-based models such as Graph Neural Networks (GNNs) which have emerged as a fundamental building block in many AI systems. Why graphs? Because they are everywhere! Neural connections in the brain, molecules, social networks, interactions between proteins, source code, and the structure of the Web seem to be entirely disparate phenomena at a first glance. Yet, if we abstract them as graphs -- simply a set of nodes connected by a set of edges -- we can view and study them through a common lens. Indeed, graph-based machine learning models are used across many domains for various high-impact applications. How can we make them trustworthy?
+The main focus will be on graph-based models such as **Graph Neural Networks** (GNNs) which have emerged as a fundamental building block in many AI systems. Why graphs? Because they are everywhere! Neural connections in the brain, molecules, social networks, interactions between proteins, source code, and the structure of the Web seem to be entirely disparate phenomena at a first glance. Yet, if we abstract them as graphs -- simply a set of nodes connected by a set of edges -- we can view and study them through a common lens. Indeed, graph-based machine learning models are used across many domains for various high-impact applications. How can we make them trustworthy?
 <!--  -->
 {:align="justify"}
 
