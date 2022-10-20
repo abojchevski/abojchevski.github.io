@@ -6,7 +6,7 @@ description: #<a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile_face_no_background.png
   # address: [lastname]@cispa.de
   # address: >
     # <p>555 your office number</p>
