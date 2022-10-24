@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: Teaching
 nav: true
-sort: 4
+sort: 6
 ---
 
 ### Lectures
