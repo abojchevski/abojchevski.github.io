@@ -1,5 +1,43 @@
 ---
 ---
+@inproceedings{akhondzadeh23probing,
+  author          = {Mohammad Akhondzadeh, Sadegh and Lingam, Vijay and Bojchevski, Aleksandar},
+  booktitle       = {International Conference on Artificial Intelligence and Statistics, {AISTATS}},
+  title           = {Probing Graph Representations},
+  year            = {2023},
+  category        = {conference},
+  abbr            = {AISTATS},
+  abstract        = {Today we have a good theoretical understanding of the representational power of Graph Neural Networks (GNNs). For example, their limitations have been characterized in relation to a hierarchy of Weisfeiler-Lehman (WL) isomorphism tests. However, we do not know what is encoded in the learned representations. This is our main question. We answer it using a probing framework to quantify the amount of meaningful information captured in graph representations. Our findings on molecular datasets show the potential of probing for understanding the inductive biases of graph-based models. We compare different families of models, and show that Graph Transformers capture more chemically relevant information compared to models based on message passing. We also study the effect of different design choices such as skip connections and virtual nodes. We advocate for probing as a useful diagnostic tool for evaluating and developing graph-based models.},
+}
+@inproceedings{paolino23unveiling,
+  author          = {Paolino, Raffaele and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan and Kutyniok, Gitta and Levie, Ron},
+  booktitle       = {International Conference on Learning Representation, {ICLR}},
+  title           = {Unveiling the Sampling Density in Non-uniform Geometric Graphs},
+  year            = {2023},
+  abbr            = {ICLR},
+  category        = {conference},
+  abstract        = {A powerful framework for studying graphs is to consider them as geometric graphs: nodes are randomly sampled from an underlying metric space, and any pair of nodes is connected if their distance is less than a specified neighborhood radius. Currently, the literature mostly focuses on uniform sampling and constant neighborhood radius. However, real-world graphs are likely to be better represented by a model in which the sampling density and the neighborhood radius can both vary over the latent space. For instance, in a social network communities can be modeled as densely sampled areas, and hubs as nodes with larger neighborhood radius. In this work, we first perform a rigorous mathematical analysis of this (more general) class of models, including derivations of the resulting graph shift operators. The key insight is that graph shift operators should be corrected in order to avoid potential distortions introduced by the non-uniform sampling. Then, we develop methods to estimate the unknown sampling density in a self-supervised fashion.  Finally, we present exemplary applications in which the learnt density is used to 1) correct the graph shift operator and improve performance on a variety of tasks, 2) improve pooling, and 3) extract knowledge from networks. Our experimental findings support our theory and provide strong evidence for our model.},
+}
+@inproceedings{schuchardt23localized,
+  author          = {Schuchardt, Jan and Wollschl{\"a}ger, Tom and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan},
+  booktitle       = {International Conference on Learning Representation, {ICLR}},
+  title           = {Localized Randomized Smoothing for Collective Robustness Certification},
+  year            = {2023},
+  abbr            = {ICLR},
+  award           = {notable},
+  category        = {conference},
+  abstract        = {Models for image segmentation, node classification and many other tasks map a single input to multiple labels. By perturbing this single shared input (e.g. the image) an adversary can manipulate several predictions (e.g. misclassify several pixels). Collective robustness certification is the task of provably bounding the number of robust predictions under this threat model. The only dedicated method that goes beyond certifying each output independently is limited to strictly local models, where each prediction is associated with a small receptive field. We propose a more general collective robustness certificate for all types of models and further show that this approach is beneficial for the larger class of softly local models, where each output is dependent on the entire input but assigns different levels of importance to different input regions (e.g. based on their proximity in the image). The certificate is based on our novel localized randomized smoothing approach, where the random perturbation strength for different input regions is proportional to their importance for the outputs. Localized smoothing Pareto-dominates existing certificates on both image segmentation and node classification tasks, simultaneously offering higher accuracy and stronger guarantees.}
+}
+@inproceedings{wu23adversarial,
+  author          = {Wu, Yihan and Bojchevski, Aleksandar and Huang, Heng},
+  booktitle       = {Conference on Artificial Intelligence, {AAAI}},
+  title           = {Adversarial Weight Perturbation Improves Generalization in Graph Neural Networks},
+  year            = {2023},
+  category        = {conference},
+  abbr            = {AAAI},
+  abstract        = {A lot of theoretical and empirical evidence shows that the flatter local minima tend to improve generalization. Adversarial Weight Perturbation (AWP) is an emerging technique to efficiently and effectively find such minima. In AMP we minimize the loss w.r.t. a bounded worst-case perturbation of the model parameters thereby favoring local minima with a small loss in a neighborhood around them. The benefits of AWP, and more generally the connections between flatness and generalization, have been extensively studied for i.i.d. data such as images. In this paper, we extensively study this phenomenon for graph data. Along the way, we first derive a generalization bound for non-i.i.d. node classification tasks. Then we identify a vanishing-gradient issue with all existing formulations of AWP and we propose a new Weighted Truncated AWP (WT-AWP) to alleviate this issue. We show that regularizing graph neural networks with WT-AWP consistently improves both natural and robust generalization across many different graph learning tasks and models.},
+  award           = {oral},
+}
 @inproceedings{mujkanovic22defenses,
   author          = {Mujkanovic, Felix and Geisler, Simon and G{\"u}nnemann, Stephan and Bojchevski, Aleksandar},
   title           = {Are Defenses for Graph Neural Networks Robust?},
