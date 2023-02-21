@@ -17,16 +17,6 @@ news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
-Hi, I'm Aleks :wave: I'm a tenure-track faculty at the [CISPA Helmholtz Center for Information Security](https://cispa.de){:target="_blank"}. I'm broadly interested in trustworthy machine learning, 
-that is models and algorithms that are not only accurate or efficient but also robust, privacy-preserving, fair, uncertainty-aware, interpretable, etc.
-<!--  -->
+I am an incoming (starting 01.03.23) tenured professor for Computer Science at the University of Cologne where I lead the research group on Trustworthy Artificial Intelligence. Broadly speaking my research is about models and algorithms that are not only accurate or efficient, but also robust, uncertainty-aware, privacy-preserving, fair, and interpretable. One focus area of my research is trustworthy graph-based models such as graph neural networks. Previously I was faculty at the CISPA Helmholtz Center for Information Security. Before that I did a PostDoc and completed my PhD on machine learning for graphs at the Technical University of Munich, advised by Stephan Günnemann.
 
-I completed my PhD on machine learning for graphs at the [DAML](https://www.in.tum.de/daml/){:target="_blank"} group at TU Munich, advised by [Stephan Günnemann](https://www.in.tum.de/daml/team/guennemann/){:target="_blank"}.
-<!-- During my PhD I interned at Google working with the graph mining team. -->
-I have a MSc in computer science from TU Munich where I worked at [Rostlab](https://www.rostlab.org/){:target="_blank"} on natural language mutation mentions.
-<!-- Before that I studied at the Faculty of Computer Science and Engineering in Skopje, North Macedonia. -->
-
-**Research interests**: adversarial robustness, provable guarantees, fairness, privacy-preserving machine learning, uncertainty estimation, interpretability, graph neural networks, graph representation learning, and (deep) generative models.
-<!--  -->
-If you are interested in working with us on these (or adjacent) topics don't hesitate to get in touch.
-We have multiple [open positions](/positions)! 
+We have multiple [open positions](/positions) in our research group on a variety of (trustworthy) machine learning topics. 
