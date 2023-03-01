@@ -6,9 +6,8 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Aleksandar
 # middle_name: 
 last_name: Bojchevski
-# email: a.bojchevski@in.tum.de
-email: lastname[at]cispa.de
-description: Faculty @ CISPA Helmholtz Center for Information Security
+email: a.[insert_lastname]@uni-koeln.de
+description: Full Professor @ University of Cologne
 footer_text: >
   Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.

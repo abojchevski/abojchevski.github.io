@@ -27,7 +27,7 @@ The positions include full benefits and are paid very well according to the coll
 {:align="justify"} 
 
 ##### How to apply
-Please send your application (as a single PDF file, no external links) to Aleksandar Bojchevski via [email](mailto:[insert_lastname]@cispa.de) using the subject line `[PhD]` or `[PostDoc]`.
+Please send your application (as a single PDF file, no external links) to Aleksandar Bojchevski via [email](mailto:a.[insert_lastname]@uni-koeln.de) using the subject line `[PhD]` or `[PostDoc]`.
 The application should include:
 * CV
 * Transcripts of records
