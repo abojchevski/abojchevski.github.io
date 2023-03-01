@@ -82,7 +82,7 @@ talk      = {https://recorder-v3.slideslive.com/#/share?share=52006&s=dda3ee8e-b
 abstract  = {Graph Neural Networks (GNNs) are increasingly important given their popularity and the diversity of applications. Yet, existing studies of their vulnerability to adversarial attacks rely on relatively small graphs. We address this gap and study how to attack and defend GNNs at scale. We propose two sparsity-aware first-order optimization attacks that maintain an efficient representation despite optimizing over a number of parameters which is quadratic in the number of nodes. We show that common surrogate losses are not well-suited for global attacks on GNNs. Our alternatives can double the attack strength. Moreover, to improve GNNs' reliability we design a robust aggregation function, Soft Median, resulting in an effective defense at all scales. We evaluate our attacks and defense with standard GNNs on graphs more than 100 times larger compared to previous work. We even scale one order of magnitude further by extending our techniques to a scalable GNN.},
 }
 @inproceedings{schuchardt2021collective,
-author = {Schuchardt, Jan and Bojchevski, Aleksandar and Klicpera, Johannes and G{\"u}nnemann, Stephan},
+author = {Schuchardt, Jan and Bojchevski, Aleksandar and Gasteiger, Johannes and G{\"u}nnemann, Stephan},
 title = {Collective Robustness Certificates: Exploiting Interdependence in Graph Neural Networks},
 booktitle = {International Conference on Learning Representations, {ICLR}},
 year      = {2021},
@@ -112,7 +112,7 @@ abstract  = {Randomized smoothing is currently the most competitive technique fo
 }
 @inproceedings{bojchevski2020sparse,
   title     = {Efficient Robustness Certificates for Discrete Data: Sparsity-Aware Randomized Smoothing for Graphs, Images and More},
-  author    = {Bojchevski, Aleksandar and Klicpera, Johannes and G{\"u}nnemann, Stephan},
+  author    = {Bojchevski, Aleksandar and Gasteiger, Johannes and G{\"u}nnemann, Stephan},
   booktitle = {International Conference on Machine Learning, {ICML}},
   year      = {2020},
   abstract  = {Existing techniques for certifying the robustness of models for discrete data either work only for a small class of models or are general at the expense of efficiency or tightness. Moreover, they do not account for sparsity in the input which, as our findings show, is often essential for obtaining non-trivial guarantees. We propose a model-agnostic certificate based on the randomized smoothing framework which subsumes earlier work and is tight, efficient, and sparsity-aware. Its computational complexity does not depend on the number of discrete categories or the dimension of the input (e.g. the graph size), making it highly scalable. We show the effectiveness of our approach on a wide variety of models, datasets, and tasks -- specifically highlighting its use for Graph Neural Networks. So far, obtaining provable guarantees for GNNs has been difficult due to the discrete and non-i.i.d. nature of graph data. Our method can certify any GNN and handles perturbations to both the graph structure and the node attributes.},
@@ -126,7 +126,7 @@ abstract  = {Randomized smoothing is currently the most competitive technique fo
 }
 @inproceedings{bojchevski2020pprgo,
   title     = {Scaling Graph Neural Networks with Approximate {PageRank}},
-  author    = {Bojchevski*, Aleksandar and Klicpera*, Johannes and Perozzi, Bryan and Kapoor, Amol and Blais, Martin and R{\'o}zemberczki, Benedek and Lukasik, Michal and G{\"u}nnemann, Stephan},
+  author    = {Bojchevski*, Aleksandar and Gasteiger*, Johannes and Perozzi, Bryan and Kapoor, Amol and Blais, Martin and R{\'o}zemberczki, Benedek and Lukasik, Michal and G{\"u}nnemann, Stephan},
   booktitle = {International Conference on Knowledge Discovery and Data Mining, {KDD}},
   year      = {2020},
   abstract  = {Graph neural networks (GNNs) have emerged as a powerful approach for solving many network mining tasks. However, learning on large graphs remains a challenge - many recently proposed scalable GNN approaches rely on an expensive message-passing procedure to propagate information through the graph. We present the PPRGo model which utilizes an efficient approximation of information diffusion in GNNs resulting in significant speed gains while maintaining state-of-the-art prediction performance. In addition to being faster, PPRGo is inherently scalable, and can be trivially parallelized for large datasets like those found in industry settings. We demonstrate that PPRGo outperforms baselines in both distributed and single-machine training environments on a number of commonly used academic graphs. To better analyze the scalability of large-scale graph learning methods, we introduce a novel benchmark graph with 12.4 million nodes, 173 million edges, and 2.8 million node features. We show that training PPRGo from scratch and predicting labels for all nodes in this graph takes under 2 minutes on a single machine, far outpacing other baselines on the same graph. We discuss the practical application of PPRGo to solve large-scale node classification problems at Google.},
@@ -184,8 +184,8 @@ abstract  = {Randomized smoothing is currently the most competitive technique fo
   poster    = {poster_embedding_attack.pdf},
   talk      = {https://www.videoken.com/embed/1zMVZKlxfU4?tocitem=1},
 }
-@inproceedings{klicpera19predict,
-  author    = {Johannes Klicpera and
+@inproceedings{gasteiger19predict,
+  author    = {Johannes Gasteiger and
                Aleksandar Bojchevski and
                Stephan G{\"{u}}nnemann},
   title     = {Predict then Propagate: Graph Neural Networks meet Personalized {PageRank}},
@@ -195,12 +195,12 @@ abstract  = {Randomized smoothing is currently the most competitive technique fo
   abbr      = {ICLR},
   category  = {conference},
   arxiv     = {1810.05997},
-  code      = {https://github.com/klicperajo/ppnp},
+  code      = {https://github.com/gasteigerjo/ppnp},
   poster    = {poster_ppnp.pdf}
 }
 @inproceedings{bojchevski2019pagerank,
   title     = {Is {PageRank} All You Need for Scalable Graph Neural Networks?},
-  author    = {Bojchevski, Aleksandar and Klicpera, Johannes and Perozzi, Bryan and Blais, Martin and Kapoor, Amol and Lukasik, Michal and G{\"u}nnemann, Stephan},
+  author    = {Bojchevski, Aleksandar and Gasteiger, Johannes and Perozzi, Bryan and Blais, Martin and Kapoor, Amol and Lukasik, Michal and G{\"u}nnemann, Stephan},
   booktitle = {International Workshop on Mining and Learning with Graphs, MLG},
   year      = {2019},
   abstract  = {Graph neural networks (GNNs) have emerged as a powerful approach for solving many network mining tasks. However, efficiently utilizing them on web-scale data remains a challenge despite related advances in research. Most recently proposed scalable GNNs rely on an expensive recursive message-passing procedure to propagate information through the graph. We circumvent this limitation by leveraging connections between GNNs and personalized PageRank and we develop a model that incorporates multi-hop neighborhood information in a single (non-recursive) step. Our work-in-progress approach PPRGo is significantly faster than multi-hop models while maintaining state-of-the-art prediction performance. We demonstrate the strengths and scalability of our approach on graphs orders of magnitude larger than typically considered in the literature.},
