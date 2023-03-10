@@ -8,6 +8,8 @@
   category        = {conference},
   abbr            = {AISTATS},
   abstract        = {Today we have a good theoretical understanding of the representational power of Graph Neural Networks (GNNs). For example, their limitations have been characterized in relation to a hierarchy of Weisfeiler-Lehman (WL) isomorphism tests. However, we do not know what is encoded in the learned representations. This is our main question. We answer it using a probing framework to quantify the amount of meaningful information captured in graph representations. Our findings on molecular datasets show the potential of probing for understanding the inductive biases of graph-based models. We compare different families of models, and show that Graph Transformers capture more chemically relevant information compared to models based on message passing. We also study the effect of different design choices such as skip connections and virtual nodes. We advocate for probing as a useful diagnostic tool for evaluating and developing graph-based models.},
+  arxiv           = {2303.03951},
+  code            = {https://github.com/msadegh97/probing-graph-representation},
 }
 @inproceedings{paolino23unveiling,
   author          = {Paolino, Raffaele and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan and Kutyniok, Gitta and Levie, Ron},
@@ -17,6 +19,7 @@
   abbr            = {ICLR},
   category        = {conference},
   abstract        = {A powerful framework for studying graphs is to consider them as geometric graphs: nodes are randomly sampled from an underlying metric space, and any pair of nodes is connected if their distance is less than a specified neighborhood radius. Currently, the literature mostly focuses on uniform sampling and constant neighborhood radius. However, real-world graphs are likely to be better represented by a model in which the sampling density and the neighborhood radius can both vary over the latent space. For instance, in a social network communities can be modeled as densely sampled areas, and hubs as nodes with larger neighborhood radius. In this work, we first perform a rigorous mathematical analysis of this (more general) class of models, including derivations of the resulting graph shift operators. The key insight is that graph shift operators should be corrected in order to avoid potential distortions introduced by the non-uniform sampling. Then, we develop methods to estimate the unknown sampling density in a self-supervised fashion.  Finally, we present exemplary applications in which the learnt density is used to 1) correct the graph shift operator and improve performance on a variety of tasks, 2) improve pooling, and 3) extract knowledge from networks. Our experimental findings support our theory and provide strong evidence for our model.},
+  arxiv           = {2210.08219},
 }
 @inproceedings{schuchardt23localized,
   author          = {Schuchardt, Jan and Wollschl{\"a}ger, Tom and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan},
@@ -26,7 +29,8 @@
   abbr            = {ICLR},
   award           = {notable},
   category        = {conference},
-  abstract        = {Models for image segmentation, node classification and many other tasks map a single input to multiple labels. By perturbing this single shared input (e.g. the image) an adversary can manipulate several predictions (e.g. misclassify several pixels). Collective robustness certification is the task of provably bounding the number of robust predictions under this threat model. The only dedicated method that goes beyond certifying each output independently is limited to strictly local models, where each prediction is associated with a small receptive field. We propose a more general collective robustness certificate for all types of models and further show that this approach is beneficial for the larger class of softly local models, where each output is dependent on the entire input but assigns different levels of importance to different input regions (e.g. based on their proximity in the image). The certificate is based on our novel localized randomized smoothing approach, where the random perturbation strength for different input regions is proportional to their importance for the outputs. Localized smoothing Pareto-dominates existing certificates on both image segmentation and node classification tasks, simultaneously offering higher accuracy and stronger guarantees.}
+  abstract        = {Models for image segmentation, node classification and many other tasks map a single input to multiple labels. By perturbing this single shared input (e.g. the image) an adversary can manipulate several predictions (e.g. misclassify several pixels). Collective robustness certification is the task of provably bounding the number of robust predictions under this threat model. The only dedicated method that goes beyond certifying each output independently is limited to strictly local models, where each prediction is associated with a small receptive field. We propose a more general collective robustness certificate for all types of models and further show that this approach is beneficial for the larger class of softly local models, where each output is dependent on the entire input but assigns different levels of importance to different input regions (e.g. based on their proximity in the image). The certificate is based on our novel localized randomized smoothing approach, where the random perturbation strength for different input regions is proportional to their importance for the outputs. Localized smoothing Pareto-dominates existing certificates on both image segmentation and node classification tasks, simultaneously offering higher accuracy and stronger guarantees.},
+  arxiv           = {2210.16140},
 }
 @inproceedings{wu23adversarial,
   author          = {Wu, Yihan and Bojchevski, Aleksandar and Huang, Heng},
@@ -37,6 +41,8 @@
   abbr            = {AAAI},
   abstract        = {A lot of theoretical and empirical evidence shows that the flatter local minima tend to improve generalization. Adversarial Weight Perturbation (AWP) is an emerging technique to efficiently and effectively find such minima. In AMP we minimize the loss w.r.t. a bounded worst-case perturbation of the model parameters thereby favoring local minima with a small loss in a neighborhood around them. The benefits of AWP, and more generally the connections between flatness and generalization, have been extensively studied for i.i.d. data such as images. In this paper, we extensively study this phenomenon for graph data. Along the way, we first derive a generalization bound for non-i.i.d. node classification tasks. Then we identify a vanishing-gradient issue with all existing formulations of AWP and we propose a new Weighted Truncated AWP (WT-AWP) to alleviate this issue. We show that regularizing graph neural networks with WT-AWP consistently improves both natural and robust generalization across many different graph learning tasks and models.},
   award           = {oral},
+  arxiv           = {2212.04983},
+  code            = {https://github.com/YihanWu95/WT-AWP},
 }
 @inproceedings{mujkanovic22defenses,
   author          = {Mujkanovic, Felix and Geisler, Simon and G{\"u}nnemann, Stephan and Bojchevski, Aleksandar},
@@ -47,6 +53,9 @@
   category        = {conference},
   abstract        = {A cursory reading of the literature suggests that we made a lot of progress in designing effective adversarial defenses for Graph Neural Networks (GNNs). Yet, the standard methodology has a serious flaw -- virtually all of the defenses are evaluated against non-adaptive attacks leading to overly optimistic robustness estimates. We perform a thorough robustness analysis of 7 of the most popular defenses spanning the entire spectrum of strategies, i.e. aimed at improving the graph, the architecture, or the training. The results are sobering -- most defenses show no or only marginal improvement compared to an undefended baseline. We advocate using custom adaptive attacks as a gold standard and we outline the lessons we learned from successfully designing such attacks. Moreover, our diverse collection of perturbed graphs forms a (black-box) unit test offering a first glance at a model's robustness.},
   selected        = {true},
+  arxiv           = {2301.13694},
+  code            = {https://github.com/LoadingByte/are-gnn-defenses-robust},
+  talk            = {https://www.youtube.com/watch?v=W6gxCf07vz4},
 }
 @inproceedings{scholten22defenses,
   author          = {Scholten, Yan and Schuchardt, Jan and Geisler, Simon and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan},
@@ -56,6 +65,10 @@
   abbr            = {NeurIPS},
   category        = {conference},
   abstract        = {Randomized smoothing is one of the most promising frameworks for certifying the adversarial robustness of machine learning models, including Graph Neural Networks (GNNs). Yet, existing randomized smoothing certificates for GNNs are overly pessimistic since they treat the model as a black box, ignoring the underlying architecture. To remedy this, we propose novel gray-box certificates that exploit the message-passing principle of GNNs: We randomly intercept messages and carefully analyze the probability that messages from adversarially controlled nodes reach their target nodes. Compared to existing certificates, we certify robustness to much stronger adversaries that control entire nodes in the graph and can arbitrarily manipulate node features. Our certificates provide stronger guarantees for attacks at larger distances, as messages from farther-away nodes are more likely to get intercepted. We demonstrate the effectiveness of our method on various models and datasets. Since our gray-box certificates consider the underlying graph structure, we can significantly improve certifiable robustness by applying graph sparsification.},
+  arxiv           = {2301.02039},
+  code            = {https://github.com/yascho/interception_smoothing},
+  talk            = {https://www.youtube.com/watch?v=rbFiXrh9Snk},
+  poster          = {https://yascho.github.io/assets/pdf/scholten2022randomized-poster.pdf},
 }
 @inproceedings{geisler22generalization,
   author          = {Geisler, Simon and Sommer, Johanna and Schuchardt, Jan and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan},
