@@ -1,3 +1,18 @@
+Vijay Lingam, Atula Tejaswi, Aditya Vavre, Aneesh Shetty, Gautham Krishna Gudur, Joydeep Ghosh, Alex Dimakis, Eunsol Choi, Aleksandar Bojchevski, Sujay Sanghavi
+
+@inproceedings{lingam24SVFT,
+	author = {Lingam, Vijay and Tejaswi, Atula and Vavre, Aditya and Shetty, Aneesh and Gudur, Gautham Krishna and Ghosh, Joydeep and Dimakis, Alex and Choi, Eunsol and Bojchevski, Aleksandar and Sanghavi, Sujay},
+	booktitle = {Neural Information Processing Systems, {NeurIPS}},
+	title = {SVFT: Parameter-Efficient Fine-Tuning with Singular Vectors},
+	year = {2024},
+  category        = {conference},
+  abbr            = {NeurIPS},
+  html = {https://openreview.net/forum?id=DOUskwCqg5},
+  pdf = {https://openreview.net/pdf?id=DOUskwCqg5},
+  arxiv = {2405.19597},
+  code = {https://github.com/VijayLingam95/SVFT},
+  abstract = {Popular parameter-efficient fine-tuning (PEFT) methods, such as LoRA and its variants, freeze pre-trained model weights \(W\) and inject learnable matrices \(\Delta W\). These \(\Delta W\) matrices are structured for efficient parameterization, often using techniques like low-rank approximations or scaling vectors. However, these methods typically show a performance gap compared to full fine-tuning. Although recent PEFT methods have narrowed this gap, they do so at the cost of additional learnable parameters. We propose SVFT, a simple approach that fundamentally differs from existing methods: the structure imposed on \(\Delta W\) depends on the specific weight matrix \(W\). Specifically, SVFT updates \(W\) as a sparse combination of outer products of its singular vectors, training only the coefficients (scales) of these sparse combinations. This approach allows fine-grained control over expressivity through the number of coefficients. Extensive experiments on language and vision benchmarks show that SVFT recovers up to 96% of full fine-tuning performance while training only 0.006 to 0.25% of parameters, outperforming existing methods that only recover up to 85% performance using 0.03 to 0.8% of the trainable parameter budget.},
+  }
 @inproceedings{zargarbashi24robust,
 	author = {Zargarbashi, Soroush H. and Mohammad Akhondzadeh, Sadegh and Bojchevski, Aleksandar},
 	booktitle = {International Conference on Machine Learning, {ICML}},
@@ -5,7 +20,11 @@
 	year = {2024},
   category        = {conference},
   abbr            = {ICML},
-  code = {https://github.com/soroushzargar/CAS}
+  code = {https://github.com/soroushzargar/CAS},
+  arxiv = {2407.09165},
+  html = {https://proceedings.mlr.press/v235/h-zargarbashi24a.html},
+  pdf = {https://openreview.net/pdf?id=MrNq6rbcUi},
+  abstract = {Conformal prediction (CP) can convert any model's output into prediction sets guaranteed to include the true label with any user-specified probability. However, same as the model itself, CP is vulnerable to adversarial test examples (evasion) and perturbed calibration data (poisoning). We derive provably robust sets by bounding the worst-case change in conformity scores. Our tighter bounds lead to more efficient sets. We cover both continuous and discrete (sparse) data and our guarantees work both for evasion and poisoning attacks (on both features and labels).},
   }
 @inproceedings{zargarbashi24inductive,
 	author = {Zargarbashi, Soroush H. and Bojchevski, Aleksandar},
@@ -15,7 +34,10 @@
   category        = {conference},
   abbr            = {ICLR},
   html = {https://openreview.net/forum?id=homn1jOKI5},
-  pdf = {https://openreview.net/pdf?id=homn1jOKI5}
+  pdf = {https://openreview.net/pdf?id=homn1jOKI5},
+  code = {https://github.com/soroushzargar/conformal-node-classification},
+  arxiv = {2407.09173},
+  abstract = {Conformal prediction (CP) transforms any model's output into prediction sets guaranteed to include (cover) the true label. CP requires exchangeability, a relaxation of the i.i.d. assumption, to obtain a valid distribution-free coverage guarantee. This makes it directly applicable to transductive node-classification. However, conventional CP cannot be applied in inductive settings due to the implicit shift in the (calibration) scores caused by message passing with the new nodes. We fix this issue for both cases of node and edge-exchangeable graphs, recovering the standard coverage guarantee without sacrificing statistical efficiency. We further prove that the guarantee holds independently of the prediction time, e.g. upon arrival of a new node/edge or at any subsequent moment.},
   }
 @inproceedings{lingam24rethinking,
 	author = {Lingam, Vijay and Mohammad Akhondzadeh, Sadegh and Bojchevski, Aleksandar},
@@ -25,10 +47,12 @@
   category        = {conference},
   abbr            = {ICLR},
   html = {https://openreview.net/forum?id=J7ioefqDPw},
-  pdf = {https://openreview.net/pdf?id=J7ioefqDPw}
+  pdf = {https://openreview.net/pdf?id=J7ioefqDPw},
+  code = {https://github.com/VijayLingam95/RethinkingLabelPoisoningForGNNs},
+  abstract = {Node labels for graphs are usually generated using an automated process or crowd-sourced from human users. This opens up avenues for malicious users to compromise the training labels, making it unwise to blindly rely on them. While robustness against noisy labels is an active area of research, there are only a handful of papers in the literature that address this for graph-based data. Even more so, the effects of adversarial label perturbations is sparsely studied. More critically, we reveal that the entire literature on label poisoning for GNNs is plagued by serious evaluation pitfalls. Thus making it hard to conclude how robust GNNs are against label perturbations. After course correcting the state of label poisoning attacks with our faithful evaluation, we identify a discrepancy in attack efficiency of 9% on average. Additionally, we introduce two new simple yet effective attacks that are significantly stronger (up to 8%) than the previous strongest attack. Our strongest proposed attack can be efficiently computed and is theoretically backed.},
   }
 @inproceedings{scholten23hierarchical,
-  author          = {Scholten, Yan and Schuchardt, Jan  and Bojchevski, Aleksandar  G{\"u}nnemann, Stephan},
+  author          = {Scholten, Yan and Schuchardt, Jan  and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan},
   booktitle       = {Neural Information Processing Systems, {NeurIPS}},
   title           = {Hierarchical Randomized Smoothing},
   year            = {2023},
@@ -36,6 +60,10 @@
   abbr            = {NeurIPS},
   abstract        = {Real-world data is complex and often consists of objects that can be decomposed into multiple entities (e.g. images into pixels, graphs into interconnected nodes). Randomized smoothing is a powerful framework for making models provably robust against small changes to their inputs - by guaranteeing robustness of the majority vote when randomly adding noise before classification. Yet, certifying robustness on such complex data via randomized smoothing is challenging when adversaries do not arbitrarily perturb entire objects (e.g. images) but only a subset of their entities (e.g. pixels). As a solution, we introduce hierarchical randomized smoothing: We partially smooth objects by adding random noise only on a randomly selected subset of their entities. By adding noise in a more targeted manner than existing methods we obtain stronger robustness guarantees while maintaining high accuracy. We initialize hierarchical smoothing using different noising distributions, yielding novel robustness certificates for discrete and continuous domains. We experimentally demonstrate the importance of hierarchical smoothing in image and node classification, where it yields superior robustness-accuracy trade-offs. Overall, hierarchical smoothing is an important contribution towards models that are both - certifiably robust to perturbations and accurate.},
   arxiv           = {2310.16221},
+  pdf = {https://openreview.net/pdf?id=6IhNHKyuJO},
+  talk = {https://nips.cc/virtual/2023/poster/72764},
+  poster = {https://yascho.github.io/assets/pdf/scholten2023hierarchical-poster.pdf},
+  code = {https://github.com/yascho/hierarchical_smoothing},
 }
 @inproceedings{mustafa23aregats,
   author          = {Mustafa, Nimrah and Bojchevski, Aleksandar and Burkholz, Rebekka},
@@ -46,6 +74,8 @@
   abbr            = {NeurIPS},
   abstract        = {While the expressive power and computational capabilities of graph neural networks (GNNs) have been theoretically studied, their optimization and learning dynamics, in general, remain largely unexplored. Our study undertakes the Graph Attention Network (GAT), a popular GNN architecture in which a node's neighborhood aggregation is weighted by parameterized attention coefficients. We derive a conservation law of GAT gradient flow dynamics, which explains why a high portion of parameters in GATs with standard initialization struggle to change during training. This effect is amplified in deeper GATs, which perform significantly worse than their shallow counterparts. To alleviate this problem, we devise an initialization scheme that balances the GAT network. Our approach i) allows more effective propagation of gradients and in turn enables trainability of deeper networks, and ii) attains a considerable speedup in training and convergence time in comparison to the standard initialization. Our main theorem serves as a stepping stone to studying the learning dynamics of positive homogeneous models with attention mechanisms.},
   arxiv           = {2310.07235},
+  code = {https://github.com/RelationalML/GAT_Balanced_Initialization},
+  poster = {https://private-user-images.githubusercontent.com/20179505/295445738-2caf9ac0-3a75-4fc1-aa21-c16777dd56e3.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mjk3NjEzNTgsIm5iZiI6MTcyOTc2MTA1OCwicGF0aCI6Ii8yMDE3OTUwNS8yOTU0NDU3MzgtMmNhZjlhYzAtM2E3NS00ZmMxLWFhMjEtYzE2Nzc3ZGQ1NmUzLmpwZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMjQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDI0VDA5MTA1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWFhMDJiNGZkMTk3YTQ0MTRjZjFlNGZiNDk3ZWQ4YWY2YzhiNTdlMzBkOTY5N2I0ODIyNjFjMTY5NTFlMTc2ODEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.rr1LGTPTg-KQeRloDdMjjW4kfSzvifSINZTkauYpbRs},
 }
 @inproceedings{zargarbashi23conformal,
   author          = {H. Zargarbashi, Soroush and Antonelli, Simone and Bojchevski, Aleksandar},
