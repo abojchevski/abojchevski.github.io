@@ -24,7 +24,7 @@ latest_posts:
   enabled: false
 ---
 
-I am a full professor for Computer Science at the University of Cologne where I lead the research group on Trustworthy Artificial Intelligence ([website](https://cs.uni-koeln.de/tail)). Broadly speaking our research is about models and algorithms that are not only accurate or efficient, but also robust, uncertainty-aware, privacy-preserving, fair, and interpretable. One focus area of our research is trustworthy graph-based models such as graph neural networks. Previously I was faculty at the CISPA Helmholtz Center for Information Security. Before that I did a PostDoc and completed my PhD on machine learning for graphs at the Technical University of Munich, advised by Stephan Günnemann.
+I am a full professor for Computer Science at the University of Cologne where I lead the research group on Trustworthy Artificial Intelligence ([website](https://cs.uni-koeln.de/tail)). I am also a co-director of the [ELLIS Unit NRW](https://ellis-unit-nrw.github.io). Broadly speaking our research is about models and algorithms that are not only accurate or efficient, but also robust, uncertainty-aware, privacy-preserving, fair, and interpretable. One focus area of our research is trustworthy graph-based models such as graph neural networks. Previously I was faculty at the CISPA Helmholtz Center for Information Security. Before that I did a PostDoc and completed my PhD on machine learning for graphs at the Technical University of Munich, advised by Stephan Günnemann.
 {: .text-justify}
 
 We have multiple [open positions](/positions/) in our research group on a variety of (trustworthy) machine learning topics.
