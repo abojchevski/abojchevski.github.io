@@ -1,6 +1,8 @@
 ---
 layout: about
-title: about
+# The navbar label for this page is taken from `title` (al_folio_core's header.liquid uses the
+# title of whichever page has `permalink: /`). Setting it here replaces the old hardcoded "Home".
+title: Home
 permalink: /
 subtitle:
 

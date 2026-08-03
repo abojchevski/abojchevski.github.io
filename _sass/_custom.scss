@@ -1,0 +1,79 @@
+/*******************************************************************************
+ * Site-local styles.
+ *
+ * This file is NOT owned by any gem — it is loaded by the local
+ * `assets/css/main.scss` override, which appends `@use "custom";` to the list
+ * al_folio_core ships. Put site-specific tweaks here rather than editing any
+ * gem-owned partial, so `al-folio upgrade` has nothing to flag.
+ ******************************************************************************/
+
+@use "variables" as v;
+@use "sass:color";
+
+// -----------------------------------------------------------------------------
+// Theme colour
+// -----------------------------------------------------------------------------
+// al_folio_core defaults to purple in light mode and cyan in dark. This site has
+// used teal since the pre-v1 days, in both schemes. Overriding the custom
+// properties here (rather than shadowing the gem's _themes.scss / _variables.scss)
+// keeps the override surface to zero gem-owned Sass files.
+
+$my-color: #2a9d8f;
+$my-color-light: color.adjust($my-color, $lightness: 25%);
+
+:root {
+  --global-theme-color: #{$my-color};
+  --global-hover-color: #{$my-color-light};
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #{$my-color};
+  --global-hover-color: #{$my-color-light};
+}
+
+// -----------------------------------------------------------------------------
+// Justified body text
+// -----------------------------------------------------------------------------
+// Replaces the pre-v1 `align="justify"` attribute (a deprecated HTML attribute
+// that Kramdown passed straight through). Applied per-paragraph with
+// `{: .text-justify}` in _pages/*.md.
+
+.text-justify {
+  text-align: justify;
+}
+
+// -----------------------------------------------------------------------------
+// Deep links into the publication list
+// -----------------------------------------------------------------------------
+// Items in _news link to /publications/#entry-key. al_folio_core sets
+// `scroll-margin-top: 66px` on headings only, but a bibliography entry anchor is
+// a plain <div id="...">, so without this the target lands under the fixed
+// navbar. 66px matches the gem's value for headings.
+
+.publications .row > div[id] {
+  scroll-margin-top: 66px;
+}
+
+// -----------------------------------------------------------------------------
+// "selected publications" / "news" heading links
+// -----------------------------------------------------------------------------
+// The about layout already wraps these headings in a link to /publications/ and
+// /news/, but styles them `color: inherit`, so nothing signals they are
+// clickable. Restore an affordance without overriding the layout.
+
+.post > article > h2 > a[href] {
+  &::after {
+    content: " ↗";
+    font-size: 0.7em;
+    vertical-align: super;
+    opacity: 0.45;
+  }
+
+  &:hover {
+    color: var(--global-theme-color) !important;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}

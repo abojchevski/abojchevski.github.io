@@ -247,7 +247,6 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
@@ -319,7 +318,7 @@ terser:
 # -----------------------------------------------------------------------------
 
 # No blog and no books collection on this site, so no archives are generated.
-jekyll-archives:
+# (The `jekyll-archives` key is omitted entirely; an empty value warns "Expected a hash but got nil".)
 
 display_tags: []
 display_categories: []

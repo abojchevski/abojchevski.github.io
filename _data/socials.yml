@@ -4,4 +4,4 @@
 email: a.bojchevski@uni-koeln.de # protected at build time via `protect_email: true` in _config.yml
 scholar_userid: F1APiN4AAAAJ # your Google Scholar ID
 github_username: abojchevski
-twitter_username: abojchevski
+x_username: abojchevski # renamed from `twitter_username` in v1; still links to twitter.com
