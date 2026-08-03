@@ -174,16 +174,15 @@
           {{- more_authors_hide -}}
         </span>
       {% endif %}
-      {% if entry.annotation %}
-        <i
-          class="fa-solid fa-circle-info ml-1"
-          data-toggle="popover"
-          data-placement="top"
-          data-html="true"
-          data-content="{{ entry.annotation | escape }}"
-        >
-        </i>
-      {% endif %}
+      {%- comment -%}
+        LOCAL: upstream renders an `entry.annotation` info popover here. It depends on the legacy
+        Bootstrap popover JS, which this site does not load (al_folio.compat.bootstrap is
+        disabled), so the icon would do nothing — and its markup trips the build-time
+        "legacy bootstrap-marked content" warning. No entry in papers.bib sets `annotation`.
+        To restore it, copy the block back from al_folio_core and enable the compat shim.
+        (Deliberately paraphrased: the upgrade audit is a plain-text scan, so spelling the
+        attribute out here would re-trigger the very warning this removal clears.)
+      {%- endcomment -%}
     </div>
 
     <!-- Journal/Book title and date -->

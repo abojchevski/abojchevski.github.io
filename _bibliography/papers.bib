@@ -4,7 +4,9 @@
   title     = {Front-Loaded Robust Conformal Prediction: Heavy Calibration, Minimal Test-Time Cost},
   year      = {2026},
   category  = {conference},
-  abbr      = {ICML}
+  abbr      = {ICML},
+  html      = {https://openreview.net/forum?id=OfXpAituJ9},
+  pdf       = {https://openreview.net/pdf?id=OfXpAituJ9}
 }
 @inproceedings{akhondzadeh26eva,
   author    = {Mohammad Akhondzadeh, Sadegh and Zargarbashi, Soroush H. and Cao, Jimin and Bojchevski, Aleksandar},
@@ -13,7 +15,8 @@
   year      = {2026},
   category  = {conference},
   abbr      = {ICLR},
-  arxiv     = {2507.08212}
+  arxiv     = {2507.08212},
+  abstract  = {Even a slight perturbation in the graph structure can cause a significant drop in the accuracy of graph neural networks (GNNs). Most existing attacks leverage gradient information to perturb edges. This relaxes the attack's optimization problem from a discrete to a continuous space, resulting in solutions far from optimal. It also restricts the adaptability of the attack to non-differentiable objectives. Instead, we introduce a few simple yet effective enhancements of an evolutionary-based algorithm to solve the discrete optimization problem directly. Our Evolutionary Attack (EvA) works with any black-box model and objective, eliminating the need for a differentiable proxy loss. This allows us to design two novel attacks that reduce the effectiveness of robustness certificates and break conformal sets. The memory complexity of our attack is linear in the attack budget. Among our experiments, EvA shows \(\sim\)11\% additional drop in accuracy on average compared to the best previous attack, revealing significant untapped potential in designing attacks.}
 }
 @inproceedings{javanmardi26optimal,
   author    = {Javanmardi, Alireza and Zargarbashi, Soroush H. and Thies, Santo M. A. R. and Waegeman, Willem and Bojchevski, Aleksandar and H{\"u}llermeier, Eyke},
@@ -22,7 +25,8 @@
   year      = {2026},
   category  = {conference},
   abbr      = {UAI},
-  arxiv     = {2505.19033}
+  arxiv     = {2505.19033},
+  abstract  = {Conformal prediction (CP) is a widely used frequentist framework to quantify uncertainty by constructing prediction sets with user-specified marginal coverage guarantees. In practice, CP is typically applied on top of probabilistic classifiers, which are able to express aleatoric but not epistemic uncertainty. In this paper, we consider the question of how to optimally employ CP on top of a more expressive formalism, namely credal sets, which can express both aleatoric and epistemic uncertainty. More specifically, we propose probabilistic Bernoulli prediction sets (BPS) and derive a variant that achieves conditional coverage for valid credal sets while remaining minimal in expected size. We then address the more realistic scenario in which the validity of the credal sets is not guaranteed. Assuming access to calibration data with ground-truth distributions over labels, we apply conformal risk control to BPS and derive a PAC-style guarantee: with high probability over the data, the achieved conditional coverage is at least the desired level. We validate our theoretical findings empirically over various datasets.}
 }
 @article{ma26safepowergraph,
   author   = {Ma, Aoxiang and Ghamizi, Salah and Bojchevski, Aleksandar and Zhang, P. and Cao, Jun},
@@ -31,7 +35,8 @@
   year     = {2026},
   category = {conference},
   abbr     = {EnergyAI},
-  arxiv    = {2407.12421}
+  arxiv    = {2407.12421},
+  abstract  = {Power grids are critical infrastructures of paramount importance to modern society and their rapid evolution and interconnections has heightened the complexity of power systems (PS) operations. Traditional methods for grid analysis struggle with the computational demands of large-scale RES and ES integration, prompting the adoption of machine learning (ML) techniques, particularly Graph Neural Networks (GNNs). GNNs have proven effective in solving the alternating current (AC) Power Flow (PF) and Optimal Power Flow (OPF) problems, crucial for operational planning. However, existing benchmarks and datasets completely ignore safety and robustness requirements in their evaluation and never consider realistic safety-critical scenarios that most impact the operations of the power grids. We present SafePowerGraph, the first simulator-agnostic, safety-oriented framework and benchmark for GNNs in PS operations. SafePowerGraph integrates multiple PF and OPF simulators and assesses GNN performance under diverse scenarios, including energy price variations and power line outages. Our extensive experiments underscore the importance of self-supervised learning and graph attention architectures for GNN robustness. We provide at https://github.com/yamizi/SafePowerGraph our open-source repository, a comprehensive leaderboard, a dataset and model zoo and expect our framework to standardize and advance research in the critical field of GNN for power systems.}
 }
 @inproceedings{akhondzadeh26cats,
   author     = {Mohammad Akhondzadeh, Sadegh and Zargarbashi, Soroush H. and Antonelli, Simone and Bojchevski, Aleksandar},
@@ -52,7 +57,8 @@
   abbr       = {PDTAI},
   arxiv      = {2605.22984},
   award      = {Oral},
-  award_name = {Oral}
+  award_name = {Oral},
+  abstract  = {Test-Time Training (TTT) is an emerging paradigm that enables models to adapt their parameters during inference, improving performance on tasks such as few-shot learning, retrieval-augmented generation, and complex reasoning. However, this dynamic adaptation introduces new vulnerabilities that adversaries can exploit to jailbreak models. We identify three threat models for TTT and demonstrate how attackers can leverage them to bypass safety filters. Our results show that TTT can significantly increase the Attack Success Rate (ASR) and the ASR over 10 generation trials (ASR@10). For example, under LoRA, the few-shot and generation-phase threat models achieve an average ASR@10 of 95\% and 93\% respectively, across models from different families and scales. These vulnerabilities transfer to production fine-tuning APIs. We also show that TTT-induced overfitting can produce degenerate outputs that inflate ASR under standard judges, and propose a validity-aware evaluation to correct for this. Our findings suggest that TTT exposes a new attack surface, strengthens attacks, and undermines existing safety guardrails. As a first step toward defense, we propose a lightweight provider-side detector that flags TTT requests via the perplexity shift on a private harmful holdout, but robust deployment will ultimately require dynamic alignment.}
 }
 @inproceedings{zargarbashi25onesample,
   author    = {Zargarbashi, Soroush H. and Mohammad Akhondzadeh, Sadegh and Bojchevski, Aleksandar},
@@ -61,7 +67,8 @@
   year      = {2025},
   category  = {conference},
   abbr      = {NeurIPS},
-  arxiv     = {2506.16553}
+  arxiv     = {2506.16553},
+  abstract  = {For any black-box model, conformal prediction (CP) returns prediction sets guaranteed to include the true label with high adjustable probability. Robust CP (RCP) extends the guarantee to the worst case noise up to a pre-defined magnitude. For RCP, a well-established approach is to use randomized smoothing since it is applicable to any black-box model and provides smaller sets compared to deterministic methods. However, smoothing-based robustness requires many model forward passes per each input which is computationally expensive. We show that conformal prediction attains some robustness even with a single forward pass on a randomly perturbed input. Using any binary certificate we propose a single sample robust CP (RCP1). Our approach returns robust sets with smaller average set size compared to SOTA methods which use many (e.g. 100) passes per input. Our key insight is to certify the conformal procedure itself rather than individual conformity scores. Our approach is agnostic to the task (classification and regression). We further extend our approach to smoothing-based robust conformal risk control.}
 }
 @inproceedings{akhondzadeh25kurtail,
   author    = {Mohammad Akhondzadeh, Sadegh and Bojchevski, Aleksandar and Eleftheriou, Evangelos and Dazzi, Martino},
@@ -70,7 +77,8 @@
   year      = {2025},
   category  = {conference},
   abbr      = {EMNLP},
-  arxiv     = {2503.01483}
+  arxiv     = {2503.01483},
+  abstract  = {One of the challenges of quantizing a large language model (LLM) is the presence of outliers. Outliers often make uniform quantization schemes less effective, particularly in extreme cases such as 4-bit quantization. We introduce KurTail, a new post-training quantization (PTQ) scheme that leverages Kurtosis-based rotation to mitigate outliers in the activations of LLMs. Our method optimizes Kurtosis as a measure of tailedness. This approach enables the quantization of weights, activations, and the KV cache in 4 bits. We utilize layer-wise optimization, ensuring memory efficiency. KurTail outperforms existing quantization methods, offering a 13.3\% boost in MMLU accuracy and a 15.5\% drop in Wiki perplexity compared to QuaRot. It also outperforms SpinQuant with a 2.6\% MMLU gain and reduces perplexity by 2.9\%, all while reducing the training cost. For comparison, learning the rotation using SpinQuant for Llama3-70B requires at least four NVIDIA H100 80GB GPUs, whereas our method requires only a single GPU, making it a more accessible solution for consumer GPU.}
 }
 @inproceedings{zargarbashi25binary,
   author    = {Zargarbashi, Soroush H. and Bojchevski, Aleksandar},
@@ -80,7 +88,8 @@
   category  = {conference},
   abbr      = {ICLR},
   arxiv     = {2503.05239},
-  slides    = {https://iclr.cc/media/iclr-2025/Slides/28494.pdf}
+  slides    = {https://iclr.cc/media/iclr-2025/Slides/28494.pdf},
+  abstract  = {Conformal prediction (CP) converts any model's output to prediction sets with a guarantee to cover the true label with (adjustable) high probability. Robust CP extends this guarantee to worst-case (adversarial) inputs. Existing baselines achieve robustness by bounding randomly smoothed conformity scores. In practice, they need expensive Monte-Carlo (MC) sampling (e.g. \(\sim10^4\) samples per point) to maintain an acceptable set size. We propose a robust conformal prediction that produces smaller sets even with significantly lower MC samples (e.g. 150 for CIFAR10). Our approach binarizes samples with an adjustable (or automatically adjusted) threshold selected to preserve the coverage guarantee. Remarkably, we prove that robustness can be achieved by computing only one binary certificate, unlike previous methods that certify each calibration (or test) point. Thus, our method is faster and returns smaller robust sets. We also eliminate a previous limitation that requires a bounded score function.}
 }
 @article{antonelli25valuation,
   author   = {Antonelli, Simone and Bojchevski, Aleksandar},
@@ -91,7 +100,8 @@
   abbr     = {TMLR},
   html     = {https://openreview.net/forum?id=tNyApIqDSJ},
   pdf      = {https://openreview.net/pdf?id=tNyApIqDSJ},
-  code     = {https://github.com/siantonelli/graph_valuation}
+  code     = {https://github.com/siantonelli/graph_valuation},
+  abstract  = {How much is a node worth? We answer this question using an emerging set of data valuation techniques, where the value of a data point is measured via its marginal contribution when added to the (training) dataset. Data valuation has been primarily studied in the i.i.d. setting, giving rise to methods like influence functions, leave-one-out estimation, data Shapley, and data Banzhaf. We conduct a comprehensive study of data valuation approaches applied to graph-structured models such as graph neural networks in a semi-supervised transductive setting. Since all nodes (labeled and unlabeled) influence both training and inference we construct various scenarios to understand the diverse mechanisms by which nodes can impact learning. We show that the resulting node values can be used to identify (positively and negatively) influential nodes, quantify model brittleness, detect poisoned data, and accurately predict counterfactuals.}
 }
 @article{kopetzki25transferability,
   author   = {Kopetzki, Anna-Kathrin and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan},
