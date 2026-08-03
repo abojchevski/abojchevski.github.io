@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I gave a talk on *Trustworthy Machine Learning for Graphs* at [CISPA](https://cispa.de/en){:target="_blank"}.
+I gave a talk on _Trustworthy Machine Learning for Graphs_ at [CISPA](https://cispa.de/en){:target="_blank"}.

@@ -3,7 +3,7 @@
 Personal academic website of Aleksandar Bojchevski, built with
 [al-folio](https://github.com/alshedivat/al-folio) **v1.x**.
 
-In v1.x al-folio is a thin Jekyll *starter*, not a theme: layouts, includes, Sass and Liquid tags
+In v1.x al-folio is a thin Jekyll _starter_, not a theme: layouts, includes, Sass and Liquid tags
 live in versioned gems (`al_folio_core`, `al_citations`, `al_math`, …) pinned in `Gemfile` and
 listed again under `plugins:` in `_config.yml`. **Both lists must agree** — a plugin present in only
 one of them is silently inert.
@@ -20,22 +20,23 @@ bundle exec jekyll serve      # http://localhost:4000/
 
 ## What lives where
 
-| Change | File |
-| --- | --- |
-| Bio, profile photo, news/publication toggles | `_pages/about.md` |
-| Publications | `_bibliography/papers.bib` + `_pages/publications.md` |
-| News items | `_news/*.md` (one file each, `inline: true`) |
-| Open positions / theses / teaching | `_pages/{positions,theses,teaching}.md` |
-| Social links | `_data/socials.yml` |
-| Co-author links, venue badges | `_data/{coauthors,venues}.yml` |
-| Site settings, feature flags | `_config.yml` |
+| Change                                       | File                                                  |
+| -------------------------------------------- | ----------------------------------------------------- |
+| Bio, profile photo, news/publication toggles | `_pages/about.md`                                     |
+| Publications                                 | `_bibliography/papers.bib` + `_pages/publications.md` |
+| News items                                   | `_news/*.md` (one file each, `inline: true`)          |
+| Open positions / theses / teaching           | `_pages/{positions,theses,teaching}.md`               |
+| Social links                                 | `_data/socials.yml`                                   |
+| Co-author links, venue badges                | `_data/{coauthors,venues}.yml`                        |
+| Site settings, feature flags                 | `_config.yml`                                         |
 
-Adding a publication in a **new year** also requires adding that year to the `years:` list in
-`_pages/publications.md`, otherwise the entry is silently omitted.
+Adding a publication needs no other change: the year headings come from jekyll-scholar's
+`group_by: year`, so a paper in a new year appears on its own. Set `category` to `conference`,
+`workshop` or `thesis` to place it in the right section of `_pages/publications.md`.
 
 ## Local overrides
 
-Files under `_layouts/`, `_includes/` and `_sass/` in this repo *shadow* the gem-owned versions.
+Files under `_layouts/`, `_includes/` and `_sass/` in this repo _shadow_ the gem-owned versions.
 Each one is recorded in `.al-folio-overrides.yml` together with the gem checksum it was reviewed
 against. After a gem upgrade:
 

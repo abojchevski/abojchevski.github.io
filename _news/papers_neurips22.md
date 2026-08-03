@@ -4,4 +4,5 @@ date: 2022-09-15
 inline: true
 related_posts: false
 ---
+
 Two papers on robustness, one on [adaptive attacks](/publications/#mujkanovic22defenses) and one on [robustness certificates](/publications/#scholten22defenses), were accepted at NeurIPS 2022.
