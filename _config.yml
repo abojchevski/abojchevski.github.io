@@ -400,7 +400,11 @@ max_author_limit: # leave blank to always show all authors
 more_authors_animation_delay: 10 # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
-enable_publication_thumbnails: false
+# MUST stay true: in al_folio_core's bib.liquid the whole left-hand column is wrapped in
+# `{% if site.enable_publication_thumbnails %}`, and that column holds the `abbr` venue badge
+# (NeurIPS/ICML/ICLR/...) as well as the thumbnail. Turning it off silently removes the badges.
+# No bib entry sets `preview`, so no thumbnail is rendered either way.
+enable_publication_thumbnails: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Link Attributes

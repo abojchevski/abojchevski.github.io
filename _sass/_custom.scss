@@ -32,6 +32,23 @@ html[data-theme="dark"] {
 }
 
 // -----------------------------------------------------------------------------
+// Award badge colour
+// -----------------------------------------------------------------------------
+// al_folio_core styles the award button with `border-color: var(--global-highlight-color)`,
+// which is a dark red ($red-color-dark) and clashes with the teal accent. The pre-v1 site
+// showed awards in the theme colour, so restore that.
+
+.publications ol.bibliography li a.award.btn {
+  color: var(--global-theme-color) !important;
+  border-color: var(--global-theme-color);
+
+  &:hover {
+    color: var(--global-hover-text-color) !important;
+    background-color: var(--global-theme-color);
+  }
+}
+
+// -----------------------------------------------------------------------------
 // Justified body text
 // -----------------------------------------------------------------------------
 // Replaces the pre-v1 `align="justify"` attribute (a deprecated HTML attribute
