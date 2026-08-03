@@ -80,6 +80,8 @@ jobs:
           node-version: "20"
       - name: Install and Build 🔧
         run: |
+          # jekyll-imagemagick (imagemagick.enabled in _config.yml) shells out to `convert`
+          sudo apt-get update && sudo apt-get install -y imagemagick
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Purge unused CSS 🧹

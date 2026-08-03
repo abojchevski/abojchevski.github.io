@@ -426,7 +426,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: false # needs ImageMagick `convert` on PATH; this site has a handful of images, so it is off
+  enabled: true # needs ImageMagick `convert` on PATH (brew install imagemagick); CI installs it in deploy.yml
   widths:
     - 480
     - 800
