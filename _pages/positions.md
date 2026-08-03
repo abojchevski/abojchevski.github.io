@@ -26,7 +26,7 @@ One focus area is on graph-based models such as **graph neural networks** which 
 The positions include full benefits and are paid very well according to the collective labor agreement TVöD: [100% E13](https://oeffentlicher-dienst.info/c/t/rechner/tvoed/bund?id=tvoed-bund&g=E_13) for PhDs (around 4K euros per month before taxes) and [100% E14](https://oeffentlicher-dienst.info/c/t/rechner/tvoed/bund?id=tvoed-bund&g=E_14) for PostDocs (around 4.5K euros per month before taxes).
 {: .text-justify}
 ##### How to apply
-Please send your application (as a single PDF file, no external links) to Aleksandar Bojchevski via [email](mailto:a.bojchevski@uni-koeln.de) using the subject line `[PhD]` or `[PostDoc]`.
+Please send your application (as a single PDF file, no external links) to Aleksandar Bojchevski via {% al_email_protect_link site.data.socials.email %} using the subject line `[PhD]` or `[PostDoc]`.
 The application should include:
 * CV
 * Transcripts of records
