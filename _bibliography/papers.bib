@@ -6,7 +6,8 @@
   category  = {conference},
   abbr      = {ICML},
   html      = {https://openreview.net/forum?id=OfXpAituJ9},
-  pdf       = {https://openreview.net/pdf?id=OfXpAituJ9}
+  pdf       = {https://openreview.net/pdf?id=OfXpAituJ9},
+  abstract  = {Robust conformal prediction (RCP) extends conformal prediction (CP) to noisy inputs by producing prediction sets with guaranteed coverage, ensuring that the true label is contained in the set with a user-specified probability even under worst-case perturbations. Recent works use randomized smoothing, as it provides robustness for black-box models at larger radii. Currently, there exist two setups for smoothing-based RCP: one requires extensive Monte Carlo sampling at calibration and test time but results in smaller prediction sets; the other setup produces larger prediction sets but uses a single sample at both stages. In deployment, calibration—as a one-time pre-processing step—can accommodate substantially higher computational overhead than inference. Inspired by this observation, we introduce an RCP framework that strikes a balance between the two extremes of this trade-off: we increase the sample rate at calibration time while keeping it either one or very low during test time. This calibration-time sampling opens the possibility of reducing the size of the prediction sets. In production, where the number of test predictions typically far exceeds the size of the calibration set, our Front-Loaded RCP matches the computational complexity of the state of the art while producing considerably smaller prediction sets at larger radii.}
 }
 @inproceedings{akhondzadeh26eva,
   author    = {Mohammad Akhondzadeh, Sadegh and Zargarbashi, Soroush H. and Cao, Jimin and Bojchevski, Aleksandar},
@@ -29,7 +30,7 @@
   abstract  = {Conformal prediction (CP) is a widely used frequentist framework to quantify uncertainty by constructing prediction sets with user-specified marginal coverage guarantees. In practice, CP is typically applied on top of probabilistic classifiers, which are able to express aleatoric but not epistemic uncertainty. In this paper, we consider the question of how to optimally employ CP on top of a more expressive formalism, namely credal sets, which can express both aleatoric and epistemic uncertainty. More specifically, we propose probabilistic Bernoulli prediction sets (BPS) and derive a variant that achieves conditional coverage for valid credal sets while remaining minimal in expected size. We then address the more realistic scenario in which the validity of the credal sets is not guaranteed. Assuming access to calibration data with ground-truth distributions over labels, we apply conformal risk control to BPS and derive a PAC-style guarantee: with high probability over the data, the achieved conditional coverage is at least the desired level. We validate our theoretical findings empirically over various datasets.}
 }
 @article{ma26safepowergraph,
-  author   = {Ma, Aoxiang and Ghamizi, Salah and Bojchevski, Aleksandar and Zhang, P. and Cao, Jun},
+  author   = {Ma, Aoxiang and Ghamizi, Salah and Bojchevski, Aleksandar and Zhang, Pei and Cao, Jun},
   journal  = {Energy and {AI}},
   title    = {SafePowerGraph: A Safety-Aware Benchmarking Framework for Scalable Graph Neural Networks in Power Flow and Optimal Power Flow},
   year     = {2026},
@@ -46,7 +47,10 @@
   category   = {workshop},
   abbr       = {CAO},
   award      = {Oral and Best Poster Award},
-  award_name = {Oral, Best Poster}
+  award_name = {Oral, Best Poster},
+  abstract  = {Reasoning language models (RLMs) have shown significant improvements through test-time scaling. However, these gains come at the cost of more resource-intensive and slower inference, leading to latencies that directly impacts user experience. This cost can be reduced by avoiding overthinking and responding quickly to simple queries. Ideally, models should adapt their thinking strategy to the difficulty of the task. Such adaptivity is increasingly feasible because recent foundation models already provide discrete options for reasoning effort (e.g., low, high). We provide a framework for adaptive test-time scaling with a guarantee of controlled risk. Our method estimates task difficulty based on the probability of success at each reasoning level (while keeping additional cost minimal) and adjusts its output via conformal risk control. Specifically, our method guarantees that the probability of producing an incorrect answer remains below a user-specified tolerance level, while adaptively allocating less compute to easier queries and more to harder ones. Our results demonstrate that an appropriate reasoning level can be selected automatically while ensuring rigorous statistical guarantees.},
+  html      = {https://openreview.net/forum?id=mXuUomGc0I},
+  pdf       = {https://openreview.net/pdf?id=mXuUomGc0I}
 }
 @inproceedings{antonelli26ttt,
   author     = {Antonelli*, Simone and Mohammad Akhondzadeh*, Sadegh and Bojchevski, Aleksandar},
@@ -113,7 +117,8 @@
   year     = {2025},
   category = {conference},
   abbr     = {KAIS},
-  doi      = {10.1007/s10115-024-02333-x}
+  doi      = {10.1007/s10115-024-02333-x},
+  abstract  = {Knowledge transfer is an effective method for learning, particularly useful when labeled data are limited or when training a model from scratch is too expensive. Most of the research on transfer learning focuses on achieving accurate models, overlooking the crucial aspect of adversarial robustness. However, ensuring robustness is vital, especially when applying transfer learning in safety-critical domains. We compare robustness of models obtained by 11 training procedures on source domains and 3 retraining schemes on target domains, including normal, adversarial, contrastive, and Lipschitz constrained training variants. Robustness is analyzed by adversarial attacks with respect to two different transfer learning model outputs: (i) the latent representations and (ii) the predictions. Studying latent representations in correlation with predictions is crucial for robustness of transfer learning models, since they are solely learned on the source domain. Besides adversarial attacks that aim at changing the prediction, we also analyze the effect of directly attacking representations. Our results show that adversarial robustness can transfer across domains, but effective robust transfer learning requires techniques that ensure robustness independent of the training data to preserve them during the transfer. Retraining on the target domain has a minor impact on the robustness of the target model. Representations exhibit greater robustness compared to predictions across both the source and target domain.}
 }
 @inproceedings{lingam23pitfalls,
   author    = {Lingam, Vijay and Mohammad Akhondzadeh, Sadegh and Bojchevski, Aleksandar},
@@ -121,7 +126,10 @@
   title     = {Pitfalls in Evaluating {GNNs} under Label Poisoning Attacks},
   year      = {2023},
   category  = {workshop},
-  abbr      = {PLDC}
+  abbr      = {PLDC},
+  abstract  = {Graph Neural Networks (GNNs) have shown impressive performance on several graph-based tasks. However, recent research on adversarial attacks shows how sensitive GNNs are to node/edge/label perturbations. Of particular interest is the label poisoning attack, where flipping an unnoticeable fraction of training labels can adversely affect GNNs' performance. While several such attacks were proposed, the latent flaws in the evaluation setup cloud the true effectiveness of the attacks. In this work, we uncover 5 frequent pitfalls in the evaluation setup that plague all existing label-poisoning attacks for GNNs. We observe for some settings that the state-of-the-art attacks are no better than a random label-flipping attack. We propose and advocate for a new evaluation setup that remedies the shortcomings, and can help gauge the potency of label-poisoning attacks fairly. Post remedying the pitfalls, on the Cora-ML dataset, we see a difference in performance of up to 19.37\%.},
+  html      = {https://openreview.net/forum?id=qGKj3AHlSXv},
+  pdf       = {https://openreview.net/pdf?id=qGKj3AHlSXv}
 }
 @inproceedings{geisler21attacking,
   author    = {Geisler, Simon and Z{\"u}gner, Daniel and Bojchevski, Aleksandar and G{\"u}nnemann, Stephan},
