@@ -1,2 +1,115 @@
-# Günnemann:
-#     url: https://www.in.tum.de/daml/team/guennemann/
+# Co-author links rendered in the bibliography.
+#
+# Keys MUST be the last name, lower cased and with accents stripped: _layouts/bib.liquid computes
+# `author.last | downcase | remove_accents` and looks the result up here. So Günnemann -> gunnemann,
+# Zügner -> zugner, Wollschläger -> wollschlager. The `latex` bibtex filter runs first, so the two
+# spellings in papers.bib (G{\"u}nnemann and G{\"{u}}nnemann) both collapse to the same key.
+#
+# `firstname` is a list of spellings that should match; the entry is used only when one of them
+# equals the first name as parsed from the BibTeX author field. List every variant that appears.
+#
+# Only co-authors whose page could be confirmed are listed. Add the rest as you find them — see the
+# commented block at the bottom for the names still missing.
+
+"gunnemann":
+  - firstname: ["Stephan", "S."]
+    url: https://www.cs.cit.tum.de/daml/guennemann/
+
+"mohammad akhondzadeh":
+  - firstname: ["Sadegh", "Mohammad Sadegh", "S.", "M. S."]
+    url: https://msadegh97.github.io/
+
+"zargarbashi":
+  - firstname: ["Soroush H.", "Soroush", "S. H."]
+    url: https://cispa.de/en/people/c01saha
+
+"antonelli":
+  - firstname: ["Simone", "S."]
+    url: https://siantonelli.github.io/
+
+"scholten":
+  - firstname: ["Yan", "Y."]
+    url: https://yascho.github.io/
+
+"schuchardt":
+  - firstname: ["Jan", "J."]
+    url: https://www.cs.cit.tum.de/daml/team/jan-schuchardt/
+
+"geisler":
+  - firstname: ["Simon", "S."]
+    url: https://www.cs.cit.tum.de/daml/team/alumni/simon-geisler/
+
+"gasteiger":
+  - firstname: ["Johannes", "J."]
+    url: https://www.cs.cit.tum.de/daml/team/alumni/johannes-gasteiger/
+
+"shchur":
+  - firstname: ["Oleksandr", "O."]
+    url: https://www.cs.cit.tum.de/daml/team/alumni/oleksandr-shchur/
+
+"zugner":
+  - firstname: ["Daniel", "D."]
+    url: https://www.cs.cit.tum.de/daml/team/alumni/daniel-zuegner/
+
+"kopetzki":
+  - firstname: ["Anna-Kathrin", "A.-K."]
+    url: https://www.cs.cit.tum.de/daml/team/alumni/anna-kathrin-kopetzki/
+
+"wollschlager":
+  - firstname: ["Tom", "T."]
+    url: https://www.cs.cit.tum.de/daml/team/tom-wollschlaeger/
+
+"sommer":
+  - firstname: ["Johanna", "J."]
+    url: https://www.cs.cit.tum.de/daml/team/sommer/
+
+"kuvshinov":
+  - firstname: ["Aleksei", "A."]
+    url: https://www.cs.cit.tum.de/daml/team/aleksei-kuvshinov/
+# Still unlinked — add a block above in the same shape once you have a URL.
+# Ordered roughly by how often each appears in papers.bib.
+#
+#   lingam        Vijay
+#   mustafa       Nimrah
+#   mujkanovic    Felix
+#   cao           Jimin / Jun
+#   wu            Yihan
+#   perozzi       Bryan
+#   blais         Martin
+#   kapoor        Amol
+#   lukasik       Michal
+#   rozemberczki  Benedek
+#   ghamizi       Salah
+#   ma            Aoxiang
+#   zhang         Pei
+#   paolino       Raffaele
+#   kutyniok      Gitta
+#   levie         Ron
+#   huang         Heng
+#   schmidt       Thomas
+#   sirin         Hakan
+#   monti         Federico
+#   litany        Or
+#   bronstein     Michael M.
+#   mumme         Maximilian
+#   angriman      Eugenio
+#   grinten       Alexander van der
+#   meyerhenke    Henning
+#   javanmardi    Alireza
+#   thies         Santo M. A. R.
+#   waegeman      Willem
+#   hullermeier   Eyke
+#   eleftheriou   Evangelos
+#   dazzi         Martino
+#   tejaswi       Atula
+#   vavre         Aditya
+#   shetty        Aneesh
+#   gudur         Gautham Krishna
+#   ghosh         Joydeep
+#   dimakis       Alex
+#   choi          Eunsol
+#   sanghavi      Sujay
+#   cejuela       Juan Miguel
+#   matkovic      Yves
+#   farghal       Mohamed
+#   saber         Yusuf

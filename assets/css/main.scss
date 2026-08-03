@@ -1,11 +1,47 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
+// LOCAL OVERRIDE of al_folio_core's assets/css/main.scss.
+// It is a verbatim copy of the gem's file plus a single trailing `@use "custom";`,
+// which pulls in this site's _sass/_custom.scss. Keep it in sync when the gem
+// changes: `bundle exec al-folio upgrade overrides diff assets/css/main.scss`.
+//
+// These are Sass line comments, not a Liquid comment block, for two reasons. Prettier parses this
+// file as SCSS and fails on a Liquid tag at the top level ("CssSyntaxError: Unknown word %").
+// And Jekyll runs Liquid before Sass, so even spelling that tag out inside a comment here opens a
+// block it then cannot find the end of, and the build dies. Sass comments avoid both and are
+// stripped at compile time regardless.
 @charset "utf-8";
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base"
-;
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
+
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{site.max_width | default: "930px"}}
+);
+
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+// Site-local styles (not gem-owned) — must come last so it can override tokens.
+@use "custom";

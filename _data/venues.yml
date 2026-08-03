@@ -1,2 +1,19 @@
-TEMPS:
-  url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Optional metadata for the `abbr` badges in _bibliography/papers.bib.
+# Keys must match the `abbr` value exactly. Both fields are optional:
+#   url:   makes the badge a link
+#   color: overrides the badge background
+# Left empty on purpose: badges currently render unlinked and uncoloured, as on the pre-v1 site.
+# Uncomment to opt in.
+#
+# "NeurIPS":
+#   url: https://neurips.cc/
+# "ICML":
+#   url: https://icml.cc/
+# "ICLR":
+#   url: https://iclr.cc/
+# "AAAI":
+#   url: https://aaai.org/
+# "AISTATS":
+#   url: https://aistats.org/
+# "KDD":
+#   url: https://kdd.org/
