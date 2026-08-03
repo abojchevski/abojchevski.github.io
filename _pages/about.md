@@ -24,8 +24,14 @@ latest_posts:
   enabled: false
 ---
 
-I am a full professor for Computer Science at the University of Cologne where I lead the research group on Trustworthy Artificial Intelligence ([TAIL](https://cs.uni-koeln.de/tail)). I am also a co-director of the [ELLIS Unit NRW](https://ellis-unit-nrw.github.io). Broadly speaking our research is about models and algorithms that are not only accurate or efficient, but also robust, uncertainty-aware, privacy-preserving, fair, and interpretable. One focus area of our research is trustworthy graph-based models such as graph neural networks. Previously I was faculty at the CISPA Helmholtz Center for Information Security. Before that I did a PostDoc and completed my PhD on machine learning for graphs at the Technical University of Munich, advised by Stephan Günnemann.
+I am a full professor of computer science at the University of Cologne, where I lead the research group on Trustworthy Artificial Intelligence ([TAIL](https://cs.uni-koeln.de/tail)). I am also a co-director of the [ELLIS Unit NRW](https://ellis-unit-nrw.github.io).
 {: .text-justify}
 
-We have multiple [open positions](/positions/) in our research group on a variety of (trustworthy) machine learning topics.
+My research is driven by a simple question: How can we build AI systems that remain reliable and useful when data are noisy or incomplete, computational resources are limited, and deployment conditions change? My group develops models and algorithms that are robust, uncertainty-aware, interpretable, and resource-efficient, with formal guarantees whenever possible.
+{: .text-justify}
+
+This research agenda grew out of my early work on robust machine learning for graphs and now extends to broader questions in `Trustworthy AI`. Before joining the University of Cologne, I was a faculty member at the CISPA Helmholtz Center for Information Security. I completed my PhD and PostDoc at the Technical University of Munich, where I worked with Stephan Günnemann.
+{: .text-justify}
+
+We have several [open positions](/positions/) in our research group covering a range of topics in trustworthy machine learning.
 {: .text-justify}
