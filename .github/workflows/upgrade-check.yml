@@ -3,8 +3,7 @@ name: Upgrade contract checks
 on:
   push:
     branches:
-      - master
-      - main
+      - source
       - v1.0-dev
     paths:
       - "_config.yml"
@@ -19,8 +18,7 @@ on:
       - ".github/workflows/upgrade-check.yml"
   pull_request:
     branches:
-      - master
-      - main
+      - source
       - v1.0-dev
     paths:
       - "_config.yml"
