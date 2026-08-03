@@ -32,20 +32,28 @@ html[data-theme="dark"] {
 }
 
 // -----------------------------------------------------------------------------
-// Award badge colour
+// Award badge
 // -----------------------------------------------------------------------------
-// al_folio_core styles the award button with `border-color: var(--global-highlight-color)`,
-// which is a dark red ($red-color-dark) and clashes with the teal accent. The pre-v1 site
-// showed awards in the theme colour, so restore that.
+// The local _layouts/bib.liquid override emits `<span class="award">` in the `.abbr` column,
+// beside the venue badge, as on the pre-v1 site. al_folio_core's `.abbr .award` already supplies
+// the teal text and border; the geometry below mirrors `.badge` in the gem's prebuilt
+// tailwind.css (padding .25em/.4em, 75% font, .25rem radius) so the two pills match in height.
+// The span deliberately does not carry `.badge`, which would force a teal fill via !important
+// and render teal text on teal.
 
-.publications ol.bibliography li a.award.btn {
-  color: var(--global-theme-color) !important;
-  border-color: var(--global-theme-color);
-
-  &:hover {
-    color: var(--global-hover-text-color) !important;
-    background-color: var(--global-theme-color);
-  }
+.publications ol.bibliography li .abbr .award {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-left: 0.25rem;
+  padding: 0.25em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: transparent;
 }
 
 // -----------------------------------------------------------------------------
