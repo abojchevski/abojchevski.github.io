@@ -108,10 +108,8 @@ max_width: 865px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-# Wants a ~1200x630 JPG/PNG in assets/img/. Left blank on purpose: the existing portraits are the
-# wrong shape, and profile_face_no_background.png has a transparent background, which social
-# platforms composite onto black or white unpredictably. Without it, cards still show the title,
-# description and URL - just no picture.
+# Intentionally blank: shared links show title, description and URL, with no preview picture.
+# To add one later, drop a ~1200x630 JPG/PNG in assets/img/ and name it here.
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------

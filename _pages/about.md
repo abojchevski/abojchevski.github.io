@@ -17,14 +17,14 @@ social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: false # true caps the list at 60vw and adds a scrollbar once there are >3 items
   limit: 10 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
   enabled: false
 ---
 
-I am a full professor for Computer Science at the University of Cologne where I lead the research group on Trustworthy Artificial Intelligence ([website](https://cs.uni-koeln.de/tail)). I am also a co-director of the [ELLIS Unit NRW](https://ellis-unit-nrw.github.io). Broadly speaking our research is about models and algorithms that are not only accurate or efficient, but also robust, uncertainty-aware, privacy-preserving, fair, and interpretable. One focus area of our research is trustworthy graph-based models such as graph neural networks. Previously I was faculty at the CISPA Helmholtz Center for Information Security. Before that I did a PostDoc and completed my PhD on machine learning for graphs at the Technical University of Munich, advised by Stephan Günnemann.
+I am a full professor for Computer Science at the University of Cologne where I lead the research group on Trustworthy Artificial Intelligence ([TAIL](https://cs.uni-koeln.de/tail)). I am also a co-director of the [ELLIS Unit NRW](https://ellis-unit-nrw.github.io). Broadly speaking our research is about models and algorithms that are not only accurate or efficient, but also robust, uncertainty-aware, privacy-preserving, fair, and interpretable. One focus area of our research is trustworthy graph-based models such as graph neural networks. Previously I was faculty at the CISPA Helmholtz Center for Information Security. Before that I did a PostDoc and completed my PhD on machine learning for graphs at the Technical University of Munich, advised by Stephan Günnemann.
 {: .text-justify}
 
 We have multiple [open positions](/positions/) in our research group on a variety of (trustworthy) machine learning topics.

@@ -8,20 +8,21 @@ nav_order: 4
 
 <!--
   Recurring courses are written as "every winter/summer semester since ..." rather than as an
-  ever-growing list of terms, so they stay accurate without an edit each semester. Only new
-  courses, or a course that stops running, need a change here.
+  ever-growing list of terms, so they stay accurate without an edit each semester. Only a new
+  course, or one that stops running, needs a change here.
 -->
 
 ### University of Cologne
 
 **Lectures**
 
-- Introduction to Machine Learning (SS 26)
+- Introduction to Machine Learning (every summer semester since SS 26)
 - Advanced Machine Learning (every winter semester since WS 23/24)
 - Machine Learning (every summer semester since SS 23)
 
 **Seminars**
 
+- Large Language Models: Challenges & Opportunities (WS 26/27)
 - AI for Science (SS 26)
 - AI Safety (WS 25/26)
 - Limitations of Large Language Models (SS 25)
@@ -33,18 +34,18 @@ nav_order: 4
 
 **Lecture**
 
-- [Elements of Machine Learning](https://cms.cispa.saarland/eml22/) (WS 22/23). Co-taught with Prof. Jilles Vreeken.
+- Elements of Machine Learning (WS 22/23). Co-taught with Prof. Jilles Vreeken.
 
 **Seminars**
 
-- [Classic Contributions to Machine Learning](https://cms.cispa.saarland/peml/) (SS 22). Co-taught with Rebekka Burkholz.
-- [Trustworthy Graph Neural Networks](https://cms.cispa.saarland/tgnn_ws21/) (WS 21/22)
+- Classic Contributions to Machine Learning (SS 22). Co-taught with Rebekka Burkholz.
+- Trustworthy Graph Neural Networks (WS 21/22)
 
 ### TU Munich
 
 **Lecture**
 
-- [Machine Learning](https://www.in.tum.de/daml/lehre/wintersemester-202021/machine-learning/) (WS 20/21). Co-taught with Prof. Stephan Günnemann.
+- Machine Learning (WS 20/21). Co-taught with Prof. Stephan Günnemann.
 
 **Seminars**
 
@@ -54,9 +55,3 @@ nav_order: 4
 **Lab course**
 
 - Large-Scale Graph Analytics and Machine Learning (SS 16)
-
-**Teaching assistant**
-
-- Machine Learning (WS 17/18 – WS 19/20)
-- Mining Massive Datasets (WS 16/17, SS 18, SS 19)
-- Machine Learning for Graphs and Sequential Data (SS 20)
