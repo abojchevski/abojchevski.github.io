@@ -1,2 +1,8 @@
-# Günnemann:
-#     url: https://www.in.tum.de/daml/team/guennemann/
+# Co-author links rendered in the bibliography.
+# Keys MUST be the last name, lower cased and without accents (e.g. "gunnemann", not "Günnemann"),
+# because they are matched against the BibTeX author fields. `firstname` is a list of the spellings
+# that should match. See docs/CUSTOMIZE.md § "Author annotation".
+#
+# "gunnemann":
+#   - firstname: ["Stephan", "S."]
+#     url: https://www.cs.cit.tum.de/daml/team/damlguennemann/
