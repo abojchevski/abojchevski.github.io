@@ -1,0 +1,24 @@
+{%- comment -%}
+  Theme and tag chips for one bibliography entry (called from _layouts/bib.liquid).
+  Chips link to the filtered publication list, e.g. /publications/#uq.
+{%- endcomment -%}
+{%- assign entry_themes = entry.themes | split: ' ' -%}
+{%- assign entry_tags = entry.tags | split: ' ' -%}
+{%- if entry_themes.size > 0 or entry_tags.size > 0 -%}
+  <div class="theme-chips">
+    {%- for theme in site.data.themes -%}
+      {%- if entry_themes contains theme.key or entry_tags contains theme.key -%}
+        <a
+          class="theme-chip{% if theme.kind == 'tag' %} theme-chip--tag{% endif %}"
+          href="{{ '/publications/' | relative_url }}#{{ theme.key }}"
+          data-theme="{{ theme.key }}"
+        >
+          <svg aria-hidden="true">
+            <use href="{{ '/assets/img/themes.svg' | relative_url }}#{{ theme.glyph }}"></use>
+          </svg>
+          {{- theme.label -}}
+        </a>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+{%- endif -%}

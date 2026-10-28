@@ -24,14 +24,24 @@ latest_posts:
   enabled: false
 ---
 
-I am a full professor of computer science at the University of Cologne, where I lead the research group on Trustworthy Artificial Intelligence ([TAIL](https://cs.uni-koeln.de/tail)). I am also a co-director of the [ELLIS Unit NRW](https://ellis-unit-nrw.github.io).
+I am a full professor of computer science at the University of Cologne, where I lead the research group on Trustworthy Artificial Intelligence ([TAIL](https://cs.uni-koeln.de/tail)). I am also a co-director of the [ELLIS Unit NRW](https://ellis-unit-nrw.github.io) and an [ELLIS](https://ellis.eu) Scholar.
 {: .text-justify}
 
-My research is driven by a simple question: How can we build AI systems that remain reliable and useful when data are noisy or incomplete, computational resources are limited, and deployment conditions change? My group develops models and algorithms that are robust, uncertainty-aware, interpretable, and resource-efficient, with formal guarantees whenever possible.
+My research is driven by a simple question:
+{: .research-lead}
+
+How can we build AI systems that remain reliable when assumptions break?
+{: .research-question}
+
+In practice, data are noisy, incomplete, or interdependent, computational resources are limited, and deployment conditions change. My group develops models and algorithms that are robust, uncertainty-aware, interpretable, and resource-efficient, with formal guarantees whenever possible.
 {: .text-justify}
 
-This research agenda grew out of my early work on robust machine learning for graphs and now extends to broader questions in `Trustworthy AI`. Before joining the University of Cologne, I was a faculty member at the CISPA Helmholtz Center for Information Security. I completed my PhD and PostDoc at the Technical University of Munich, where I worked with Stephan Günnemann.
+This research agenda grew out of my early work on robust machine learning for graphs, where predictions depend on each other, and now extends to broader questions in `Trustworthy AI`, including networks of interacting AI agents. Before joining the University of Cologne, I was a faculty member at the CISPA Helmholtz Center for Information Security. I completed my PhD and PostDoc at the Technical University of Munich, where I worked with Stephan Günnemann.
 {: .text-justify}
 
-We have several [open positions](/positions/) in our research group covering a range of topics in trustworthy machine learning.
+We have several [open positions](/positions/) in our research group covering a range of topics in machine learning.
 {: .text-justify}
+
+<h2>research</h2>
+
+{% include theme-cards.liquid %}

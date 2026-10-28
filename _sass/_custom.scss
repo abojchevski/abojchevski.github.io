@@ -102,3 +102,198 @@ html[data-theme="dark"] {
     }
   }
 }
+
+// -----------------------------------------------------------------------------
+// Research themes: chips, filter bar and home-page cards
+// -----------------------------------------------------------------------------
+// Content in _data/themes.yml, glyphs in assets/img/themes.svg. Single-colour on purpose: theme
+// chips use ink text with a teal glyph on a faint teal tint; tags are grey outline chips.
+
+.theme-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.35rem 0 0.15rem;
+}
+
+.theme-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  padding: 0.1em 0.55em 0.1em 0.4em;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  white-space: nowrap;
+  color: var(--global-text-color) !important;
+  background-color: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  text-decoration: none !important;
+  transition:
+    background-color 0.15s,
+    border-color 0.15s;
+
+  svg {
+    width: 1.05em;
+    height: 1.05em;
+    flex: none;
+    color: var(--global-theme-color);
+  }
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--global-theme-color) 22%, transparent);
+  }
+
+  &--tag {
+    background-color: transparent;
+    border-color: var(--global-divider-color);
+    color: var(--global-text-color-light) !important;
+
+    svg {
+      color: var(--global-text-color-light);
+    }
+
+    &:hover {
+      background-color: transparent;
+      border-color: var(--global-text-color-light);
+    }
+  }
+}
+
+.theme-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0 1.5rem;
+
+  .theme-chip {
+    font-size: 0.85rem;
+  }
+
+  .theme-chip--all {
+    padding-left: 0.6em;
+    background-color: transparent;
+    border-color: var(--global-divider-color);
+  }
+
+  .theme-chip.active {
+    border-color: var(--global-theme-color);
+    background-color: color-mix(in srgb, var(--global-theme-color) 28%, transparent);
+  }
+}
+
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.theme-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.9rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+
+  &__glyph {
+    width: 1.75rem;
+    height: 1.75rem;
+    color: var(--global-theme-color);
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 0.35rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+    line-height: 1.45;
+    margin: 0;
+  }
+}
+
+// Full-width bar under the cards for what all four share (see `band` in _data/themes.yml).
+.theme-band {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.5rem;
+  background-color: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+  font-size: 0.9rem;
+
+  &__glyph {
+    width: 1.25rem;
+    height: 1.25rem;
+    flex: none;
+    color: var(--global-theme-color);
+  }
+}
+
+@media (max-width: 767px) {
+  .theme-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// -----------------------------------------------------------------------------
+// /publications/ toolbar: theme filter + section jump links
+// -----------------------------------------------------------------------------
+
+.pub-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin: 0.5rem 0 1.5rem;
+
+  .theme-filter {
+    margin: 0;
+    flex: 1 1 auto;
+  }
+}
+
+.pub-jump {
+  flex: none;
+  font-size: 0.85rem;
+  line-height: 1.9;
+  color: var(--global-text-color-light);
+}
+
+// The theme filter hides elements with the `hidden` attribute. Guard against any
+// theme rule that sets `display` on lists or headings and would otherwise win over it.
+.publications [hidden] {
+  display: none !important;
+}
+
+// -----------------------------------------------------------------------------
+// Research question in the bio (_pages/about.md)
+// -----------------------------------------------------------------------------
+// The guiding question is set apart from the running text: own line, italic, slightly larger,
+// with a thin teal rule, the same accent as the theme cards.
+
+.research-lead {
+  margin-bottom: 0.5rem;
+}
+
+.research-question {
+  margin: 0 0 1rem;
+  padding: 0.1rem 0 0.1rem 0.9rem;
+  border-left: 2px solid var(--global-theme-color);
+  font-size: 1.15em;
+  font-style: italic;
+  line-height: 1.45;
+}

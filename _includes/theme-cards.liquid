@@ -1,0 +1,28 @@
+{%- comment -%}
+  Research theme cards on the home page. Content lives in _data/themes.yml.
+  Cards are deliberately static (no theme pages, no links).
+{%- endcomment -%}
+{%- assign sprite = '/assets/img/themes.svg' | relative_url -%}
+<div class="theme-grid">
+  {%- for theme in site.data.themes -%}
+    {%- if theme.kind == 'theme' -%}
+      <div class="theme-card">
+        <svg class="theme-card__glyph" aria-hidden="true">
+          <use href="{{ sprite }}#{{ theme.glyph }}"></use>
+        </svg>
+        <h3>{{ theme.label }}</h3>
+        <p>{{ theme.blurb }}</p>
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+  {%- for theme in site.data.themes -%}
+    {%- if theme.band -%}
+      <div class="theme-band">
+        <svg class="theme-band__glyph" aria-hidden="true">
+          <use href="{{ sprite }}#{{ theme.glyph }}"></use>
+        </svg>
+        {{ theme.band }}
+      </div>
+    {%- endif -%}
+  {%- endfor -%}
+</div>

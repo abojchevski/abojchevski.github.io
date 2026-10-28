@@ -9,10 +9,14 @@
   border) but never emits an element into that slot; its bib.liquid puts the award in `.links`
   as `a.award.btn`, which _sass/_publications.scss borders with `--global-highlight-color` (red).
 
-  Both edits are marked "LOCAL:" below. Keep this file in sync on gem upgrades:
+  A second change adds research-theme chips (see _data/themes.yml) below the venue line, and a
+  `data-themes` attribute on the row for the filter on /publications/.
+
+  All edits are marked "LOCAL:" below. Keep this file in sync on gem upgrades:
     bundle exec al-folio upgrade overrides diff _layouts/bib.liquid
 {% endcomment %}
-<div class="row">
+{%- comment -%} LOCAL: data-themes feeds assets/js/theme-filter.js. {%- endcomment -%}
+<div class="row" data-themes="{{ entry.themes }} {{ entry.tags }}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -223,6 +227,8 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+    {%- comment -%} LOCAL: research-theme chips. {%- endcomment -%}
+    {% include theme-chips.liquid %}
 
     <!-- Links/Buttons -->
     <div class="links">

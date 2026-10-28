@@ -392,7 +392,9 @@ filtered_bibtex_keywords:
     selected,
     slides,
     supp,
+    tags,
     talk,
+    themes,
     video,
     website,
   ]
