@@ -22,13 +22,25 @@ nav_order: 1
   better as flat, undivided lists.
 -->
 
-<h1>conferences &amp; journals</h1>
+<div class="pub-toolbar">
+{% include theme-filter.liquid %}
+<nav class="pub-jump" aria-label="Sections">
+Jump to: <a href="#preprints">preprints</a> · <a href="#conferences">conferences</a> · <a href="#workshops">workshops</a>
+</nav>
+</div>
+
+<h1 id="preprints">preprints</h1>
+{% bibliography --group_by none -f papers -q @*[category=preprint]* %}
+
+<h1 id="conferences">conferences &amp; journals</h1>
 {% bibliography -f papers -q @*[category=conference]* %}
 
-<h1>workshops</h1>
+<h1 id="workshops">workshops</h1>
 {% bibliography --group_by none -f papers -q @*[category=workshop]* %}
 
-<h1>theses</h1>
+<h1 id="theses">theses</h1>
 {% bibliography --group_by none -f papers -q @*[category=thesis]* %}
 
 </div>
+
+<script src="{{ '/assets/js/publications.js' | relative_url }}" defer></script>

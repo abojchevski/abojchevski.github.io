@@ -1,0 +1,45 @@
+# Research themes and cross-cutting tags.
+#
+# Papers opt in through two fields in _bibliography/papers.bib, both space-separated lists of the
+# `key`s below:  themes = {uq robust efficient}   tags = {guarantees lm}
+# Both fields are listed in `filtered_bibtex_keywords` in _config.yml, so they never leak into
+# the exported BibTeX. `glyph` is a <symbol> id in assets/img/themes.svg.
+#
+# kind: theme -> a card on the home page and a chip on every tagged paper
+# kind: tag   -> a chip only (outline style), no card
+# `band` (optional) adds a full-width bar under the cards, for a property shared by all of them.
+
+- key: uq
+  kind: theme
+  label: Uncertainty
+  glyph: g-u
+  blurb: Models that know what they don't know.
+
+- key: robust
+  kind: theme
+  label: Robustness & Safety
+  glyph: g-r
+  blurb: Reliability under noise, attacks, and adaptation.
+
+- key: efficient
+  kind: theme
+  label: Efficiency
+  glyph: g-e
+  blurb: Cheaper models, and affordable guarantees.
+
+- key: graphs
+  kind: theme
+  label: Graphs & Agents
+  glyph: g-n
+  blurb: From message passing to interacting agents.
+
+- key: guarantees
+  kind: tag
+  label: Guarantees
+  glyph: g-g
+  band: With formal guarantees whenever possible.
+
+- key: lm
+  kind: tag
+  label: Language models
+  glyph: g-lm

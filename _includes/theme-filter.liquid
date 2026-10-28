@@ -1,0 +1,21 @@
+{%- comment -%}
+  Filter bar for /publications/. Driven by the URL hash (#uq, #robust, ...) so chips anywhere on
+  the site can link straight to a filtered list. Any other hash (e.g. #entry-key from a news item)
+  is left alone. Logic in assets/js/publications.js.
+{%- endcomment -%}
+{%- assign sprite = '/assets/img/themes.svg' | relative_url -%}
+<div class="theme-filter" role="toolbar" aria-label="Filter publications by theme">
+  <a class="theme-chip theme-chip--all" href="#" data-theme="">All</a>
+  {%- for theme in site.data.themes -%}
+    <a
+      class="theme-chip{% if theme.kind == 'tag' %} theme-chip--tag{% endif %}"
+      href="#{{ theme.key }}"
+      data-theme="{{ theme.key }}"
+    >
+      <svg aria-hidden="true">
+        <use href="{{ sprite }}#{{ theme.glyph }}"></use>
+      </svg>
+      {{- theme.label -}}
+    </a>
+  {%- endfor -%}
+</div>
