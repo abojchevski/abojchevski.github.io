@@ -42,6 +42,6 @@ This research agenda grew out of my early work on robust machine learning for gr
 We have several [open positions](/positions/) in our research group covering a range of topics in machine learning.
 {: .text-justify}
 
-<h2>research</h2>
+<h2 id="research">research</h2>
 
 {% include theme-cards.liquid %}
