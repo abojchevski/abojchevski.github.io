@@ -1,3 +1,25 @@
+@inproceedings{zargarbashi26proxy,
+  author    = {Zargarbashi, Soroush H. and Mohammad Akhondzadeh, Sadegh and Bojchevski, Aleksandar},
+  booktitle = {Neural Information Processing Systems, {NeurIPS}},
+  title     = {Should We Pay This Much for Robustness? Efficient Proxy Certificates with Marginal Guarantees},
+  year      = {2026},
+  category  = {conference},
+  themes    = {robust efficient},
+  tags      = {guarantees},
+  abbr      = {NeurIPS},
+  abstract  = {Modern classifiers remain sensitive to small input perturbations, while strong model-agnostic robustness certificates such as randomized smoothing are often too expensive for deployment, requiring an extensive number (e.g. 2000) of model forward passes per input. We propose a framework that delegates certification to a cheap proxy function while statistically controlling its deviation from the original sound certificate. Given an exchangeable unlabeled calibration set, we tune the proxy via robust conformal risk control to guarantee a bounded marginal (rather than pointwise) false-approval rate: the probability, over future inputs, that the proxy accepts an input whose prediction is flipped due to perturbation. The resulting proxy certificate can be used either as a standalone marginal certificate or as a fallback mechanism that invokes the expensive certificate only when the proxy rejects. We provide both single-sample and sample-heavy calibration recipes. Empirically, as a standalone certificate our method reduces the test-time certification cost to a single model forward while retaining much of the certified performance of randomized smoothing at small radii, and as a fallback it recovers the certified ratio of randomized smoothing at a more modest speedup. This enables cheap yet effective robustness guarantees for larger architectures such as vision transformers and language models.}
+}
+@inproceedings{cao26multiconstrained,
+  author    = {Cao, Jimin and Bojchevski, Aleksandar},
+  booktitle = {Neural Information Processing Systems, {NeurIPS}},
+  title     = {Multi-Constrained Randomized Smoothing Certificates},
+  year      = {2026},
+  category  = {conference},
+  themes    = {robust},
+  tags      = {guarantees},
+  abbr      = {NeurIPS},
+  abstract  = {Randomized Smoothing (RS) is a principled and widely adopted approach for certifying the robustness of black-box models, such as neural networks, against adversarial perturbations. We propose an optimization perspective that unifies several prior randomized smoothing certificates. We then show how to reduce the underlying high-dimensional worst-case optimization problem to an equivalent two-dimensional formulation for spherical smoothing distributions under a double- or multi-sampling scheme, enabling efficient solutions via convex optimization. By exploiting additional information about the variance of the smoothed classifier, we derive certified bounds that improve upon standard certificates at most radii, at the same number of model evaluations. We show results on both classification and regression tasks.}
+}
 @article{zargarbashi26form,
   author    = {Zargarbashi, Soroush H. and Mohammad Akhondzadeh, Sadegh and Burkholz, Rebekka and Bojchevski, Aleksandar},
   title     = {What ``Form'' of Uncertainty Does Conformal Prediction Quantify?},
