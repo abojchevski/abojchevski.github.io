@@ -68,7 +68,7 @@ jobs:
       - name: Setup Ruby 💎
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.3.5"
+          ruby-version: "3.3"
           bundler-cache: true
       # Node is needed only for purgecss below. The npm devDependencies (prettier) play no
       # part in the build, so there is no `npm ci` step and no package-lock.json to cache.
