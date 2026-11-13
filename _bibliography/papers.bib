@@ -20,6 +20,18 @@
   abbr      = {NeurIPS},
   abstract  = {Randomized Smoothing (RS) is a principled and widely adopted approach for certifying the robustness of black-box models, such as neural networks, against adversarial perturbations. We propose an optimization perspective that unifies several prior randomized smoothing certificates. We then show how to reduce the underlying high-dimensional worst-case optimization problem to an equivalent two-dimensional formulation for spherical smoothing distributions under a double- or multi-sampling scheme, enabling efficient solutions via convex optimization. By exploiting additional information about the variance of the smoothed classifier, we derive certified bounds that improve upon standard certificates at most radii, at the same number of model evaluations. We show results on both classification and regression tasks.}
 }
+@article{akhondzadeh26asd,
+  author    = {Mohammad Akhondzadeh, Sadegh and Zargarbashi, Soroush H. and Bojchevski, Aleksandar},
+  title     = {Adversarial Self-Distillation},
+  journal   = {arXiv preprint},
+  year      = {2026},
+  category  = {preprint},
+  themes    = {robust},
+  tags      = {lm},
+  abbr      = {arXiv},
+  arxiv     = {2610.38732},
+  abstract  = {Even though current safety-aligned language models are able to refuse harmful requests, their guard can still be bypassed by adversarial perturbations. As in other domains, adversarial training is considered a standard defense. However, due to the autoregressive nature of language generation, supervised finetuning on template refusals does not necessarily teach the model to refuse. Evidence of this is that the adversarially trained model still complies when the attacker injects a compliant prefill. We propose Adversarial Self-Distillation (ASD), which extends a model's own safe behavior to the space of adversarial perturbations. The teacher (the model itself given the clean prompt) can refuse the harmful request by default, or with the help of an additional instruction in its context. ASD distills this knowledge to the student (which is the same model under attack) at the prefixes that the student visits (due to on-policy sampling). These potentially include compliant openings. ASD achieves lower attack success than state-of-the-art defenses with little loss in multiple-choice accuracy, and it becomes able to recover a refusal even after a compliant opening.}
+}
 @article{zargarbashi26form,
   author    = {Zargarbashi, Soroush H. and Mohammad Akhondzadeh, Sadegh and Burkholz, Rebekka and Bojchevski, Aleksandar},
   title     = {What ``Form'' of Uncertainty Does Conformal Prediction Quantify?},
