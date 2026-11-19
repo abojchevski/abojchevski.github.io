@@ -43,6 +43,33 @@
   arxiv     = {2610.24510},
   abstract  = {Conformal prediction (CP) is a post-hoc calibration method that returns prediction sets with distribution-free coverage guarantees, and the size of the output set is often interpreted as a notion of uncertainty. We show that the difference in set size between full and split CP is directly connected to Bayesian posterior variance, which is the epistemic uncertainty of the model. Essentially, this difference in set size is an aggregation of two opposite effects: (1) better model accuracy and therefore smaller set size achieved by training over extra calibration points, and (2) the ``formability'' of the model at test point towards every possible label. The latter effect vanishes with stronger models or more calibration data (as epistemic uncertainty is known for that behavior). It turns out that the model's formability itself (without the quantization effect of prediction sets, and through estimating the posterior variance) is a useful tool to quantify the epistemic uncertainty. In our empirical evaluation it performs on par with the state of the art in many setups.}
 }
+@inproceedings{zargarbashi26paga,
+  author     = {Zargarbashi, Soroush H. and Morris, Christopher and Bojchevski, Aleksandar},
+  booktitle  = {Learning on Graphs Conference, {LoG} (Extended Abstract)},
+  title      = {Probably Approximately Guaranteed Algorithms via Graph Neural Networks},
+  year       = {2026},
+  category   = {workshop},
+  themes    = {uq graphs},
+  tags      = {guarantees},
+  abbr       = {LoG},
+  award      = {Oral},
+  award_name = {Oral},
+  html       = {https://openreview.net/forum?id=LIEqTJj3wR},
+  pdf        = {https://openreview.net/pdf?id=LIEqTJj3wR},
+  abstract  = {Classical approximation algorithms provide instance-wise worst-case guarantees for hard algorithmic problems, but they are difficult to integrate into end-to-end differentiable neural pipelines and cannot exploit the distributional information. Neural algorithmic reasoning, is differentiable, distribution-aware, and often match or outperform classical methods empirically—on average and sometimes even in the worst case. The issue is that they typically lack formal guarantees. We address this gap by introducing probably approximately guaranteed algorithms (PAGA), a framework that bridges these perspectives through finite-sample marginal approximation guarantees over a test distribution. Given a held-out calibration set, PAGA obtains a conformal approximation ratio, which is either exact or a valid upper bound, depending on whether optimal objective values can be computed for a limited number of instances. The resulting approximation guarantee holds with a user-specified high probability over the instance distribution. We also derive fixed-factor certificates that, at a prescribed confidence level, bound the proportion of failures among future test instances. We instantiate the framework for covering problems, including weighted vertex cover and set cover, using a message-passing backbone.}
+}
+@inproceedings{unuvar26pagerank,
+  author    = {{\"U}n{\"u}var, Asli Tugce and Antonelli, Simone and Bojchevski, Aleksandar},
+  booktitle = {Learning on Graphs Conference, {LoG} (Extended Abstract)},
+  title     = {Optimal Link Recommendations under Local Budgets for {PageRank} Fairness},
+  year      = {2026},
+  category  = {workshop},
+  themes    = {graphs},
+  abbr      = {LoG},
+  html      = {https://openreview.net/forum?id=EpvmjulWCl},
+  pdf       = {https://openreview.net/pdf?id=EpvmjulWCl},
+  abstract  = {PageRank can systematically underrepresent minority groups. Changing a few links offers a way to improve fairness without changing the ranking algorithm itself. Existing methods overlook dangling nodes and modify links greedily, ignoring interactions between them. We address both limitations: we derive the exact effect of adding the first link from a dangling node and adapt PageRank robustness optimization to jointly select fairness-improving links. Across seven directed graphs, our method matches or outperforms the extended greedy baseline while running up to three orders of magnitude faster. Under a global edge budget, the problem becomes NP-hard, and accounting for interactions between recommendations provides the largest gains at tight budgets on five of the seven graphs.}
+}
 @inproceedings{akhondzadeh26rgopd,
   author    = {Mohammad Akhondzadeh, Sadegh and Lingam, Vijay and Tejaswi, Atula and Ekbote, Chanakya and Sanghavi, Sujay and Bojchevski, Aleksandar},
   title     = {Reward-Gated On-Policy Distillation},
